@@ -1,0 +1,25 @@
+<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.25 55.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f85177;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #f85177;
+      }
+    </style>
+  </defs>
+  <title>icon_branding</title>
+  <polyline class="cls-1" points="43 49 43 54.25 1 54.25 1 1 43 1 43 28"/>
+  <rect class="cls-1" x="30" y="27.63" width="42.25" height="21.63"/>
+  <rect class="cls-1" x="47.88" y="1.88" width="24.38" height="14.75"/>
+  <circle class="cls-2" cx="10.53" cy="12.03" r="2.78"/>
+  <line class="cls-1" x1="17.69" y1="12.03" x2="33.25" y2="12.03"/>
+  <circle class="cls-2" cx="38.45" cy="36.58" r="2.78"/>
+  <line class="cls-1" x1="45.6" y1="36.58" x2="61.17" y2="36.58"/>
+  <circle class="cls-2" cx="60" cy="9.25" r="2.78"/>
+</svg>

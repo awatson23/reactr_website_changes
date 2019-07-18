@@ -1,0 +1,1435 @@
+/*animations and their matching classes*/
+
+@keyframes slideDown{
+	0%{max-height: 0px; padding: 0; /*border: none;*/ opacity: 0;}
+	100%{max-height: 65px; padding: 12px; /*border: 2px solid #f85177;*/ opacity: 1;}
+}
+
+.slideDown{
+	animation-name: slideDown;
+	animation-duration: 0.4s;
+	animation-timing-function: ease;
+}
+
+@keyframes slideUp{
+	0%{max-height: 65px; padding: 12px; /*border: 2px solid #f85177;*/ opacity: 1;}
+	100%{max-height: 0px; padding: 0; /*border: none;*/ opacity: 0;}
+}
+
+.slideUp{
+	animation-name: slideUp;
+	animation-duration: 0.4s;
+	animation-timing-function: ease;
+}
+
+@keyframes slideIn{
+	from{opacity: 0; transform: translateX(100px);}
+	to{opacity: 1; transform: translateX(0px);}
+}
+
+.slideIn{
+	animation-name: slideIn;
+	animation-duration: 0.4s;
+	animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*GENERAL STYLES*/
+
+*{
+	font-family: 'heebo', Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	box-sizing:border-box;
+}
+
+.hide{
+	display: none;
+}
+
+#mainContainer{
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+header p{
+	color: #fff;
+}
+
+
+
+
+
+/*nav bar*/
+nav{
+	background-color: #01bec0;
+	color: #fff;
+	font-size: 18px;
+	width: 300px;
+	min-height: 100vh;
+	position: fixed;
+	box-shadow: 2px 0px 15px 10px rgba(0,0,0,0.3);
+	z-index: 999;
+}
+
+nav ul{
+	margin-top: 200px;
+	position: fixed;
+}
+
+
+nav ul li{
+	margin-bottom: 70px;
+	padding: 15px 40px 15px 20px;
+	margin-right: 30px;
+	background: linear-gradient(to right, #B2da69 50%, #01bec0 50%);
+	background-size: 200% 100%;
+	background-position:right bottom;
+	transition: all 0.2s linear;
+}
+
+nav ul li a{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+nav ul li:hover{
+	display: block;
+	background-position: left bottom;
+	z-index: 2;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+#logoContainer{
+	max-width: 250px;
+	margin-bottom: 100px;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+#logoContainer img{
+	max-width: 100%;
+}
+
+.activePage{
+	background: linear-gradient(to right, #B2da69 100%, #01bec0 100%);
+	background-size: 200% 100%;
+	background-position:right bottom;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+
+/*text styles*/
+.title{
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.smallTitle{
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.subTitle{
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.copy{
+	font-size: 18px;
+	line-height: 50px;
+}
+
+.client{
+	font-size: 20;
+	text-transform: uppercase;
+}
+
+
+
+
+
+/*top bar on archive pages*/
+.searchAdd{
+	background: rgba(255,210,62,0.8);
+	padding: 10px 30px;
+	z-index: 2;
+	grid-column: 1 / -1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.searchAdd input{
+	margin-bottom: 0 !important;
+}
+
+.searchBar{
+	width: 500px;
+	border: none;
+	padding: 10px 10px;
+	font-size: 16px;
+	box-shadow: -5px 5px 10px #e7e7e7 inset;
+	border-radius: 5px;
+}
+
+
+
+
+
+/*add and remove input classes*/
+.remove{
+	color: red;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.addInput{
+	color: blue;
+	cursor: pointer;
+}
+
+
+
+
+/*form styles*/
+input, textarea{
+   border: 2px solid #f85177;
+   padding: 15px;
+   font-size: 16px;
+   font-family: 'Heebo', Arial, sans-serif;
+   color: #707070;
+   margin-bottom: 40px;
+   width: 460px;
+ }
+
+ input{
+ 	max-height: 57px;
+ }
+
+ textarea{
+ 	height: 200px;
+ }
+
+ input[type="checkbox"]{
+ 	width: 25px;
+ 	height: 25px;
+ 	cursor: pointer;
+ }
+
+ .button{
+ 	display: block;
+ 	background-color: #f85177;
+ 	width: 200px;
+ 	height: 50px;
+ 	border-radius: 100px;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ 	line-height: 50px;
+ 	font-size: 16px;
+ 	font-weight: 700;
+ 	color: #fff;
+ 	text-decoration: none;
+	cursor: pointer;
+ }
+
+ button{
+ 	border: none;
+ 	margin-top: 80px;
+ }
+
+ #submit{
+ 	border: none;
+ 	margin-top: 85px;
+ 	margin-left: 40%;
+ }
+
+
+ /*file upload input*/
+ .fileContainer input{
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+}
+
+
+.fileContainer{
+ border: 2px solid #f85177;
+ padding: 12px;
+ background-color: #fff;
+ width: 460px;
+ margin-left: 0;
+ margin-bottom: 27px;
+ margin-right: 0;
+ max-height: 55px;
+ overflow: hidden;
+}
+
+.fileContainer label{
+ color: #BABABA;
+ font-size: 18px;
+ cursor: pointer;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ max-width: 100%;
+ z-index: 3;
+}
+
+i{
+ color: #f85177;
+ line-height: 55px;
+}
+
+
+
+/*multiple upload button*/
+.multiUpload{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 3px solid #f85177;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	margin-right: 10px;
+}
+
+.multi{
+	color: #666;
+	margin-top: 15px;
+}
+
+.multiUpload:hover{
+	background-color: #f85177;
+	border: none;
+}
+
+.multiUpload:hover i{
+	color: #fff;
+}
+
+.multiUpload i{
+	font-size: 20px;
+}
+
+
+#fileNames{
+	margin-left: 100px;
+	margin: auto;
+	padding: 20px;
+}
+
+#fileNames ul{
+	list-style-type: none;
+	font-family: 'Heebo', Arial, sans-serif;
+	font-size: 16px;
+}
+
+.first{
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f85177;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOGIN*/
+.loginbckgd{
+	background: linear-gradient(-45deg, #fff 38%, #c1c1c1 38%);
+	height: 100vh;
+}
+
+.loginForm{
+	width: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.loginForm .title{
+	color: #1e1e1e;
+}
+
+.loginForm label{
+	font-family: 'Heebo', Arial, sans-serif;
+	color: #1e1e1e;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size" 12px;
+}
+
+.loginForm .button{
+	margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*index*/
+#home{
+	width: 100%;
+	height: 100vh;
+	margin-left: 300px;
+	background: url('../images/home_bckgd2.png');
+	background-repeat: no-repeat;
+	background-position: center 200px;
+	background-color: #f7f7f7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PROJECT ARCHIVE*/
+#projectArchive{
+	width: 100%;
+	margin-left: 300px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 16px;
+
+}
+
+.projectContainer{
+	background-color: #fff;
+	grid-column: 1 / -1;
+	width: 100%;
+}
+
+
+.project{
+	max-width: 1200px;
+	margin: auto;
+	padding: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.project .title{
+	width: 100%;
+}
+
+/*leave space for search bar*/
+.projectContainer:first-child{
+	margin-top: 170px;
+}
+
+.projectContainer:nth-child(odd){
+	background-color: #f7f7f7;
+}
+
+.projectImage{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.projectImage img{
+	max-width: 100%;
+}
+
+.projectInfo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 350px;
+	max-height: 100%;
+}
+
+
+.projectInfo .client{
+	width: 100%;
+	margin-top: 40px;
+}
+
+.projectActions{
+	height: 125px;
+}
+
+.projectActions ul{
+	list-style-type: none;
+}
+
+.projectActions ul li a{
+	color: #5549f9;
+}
+
+.projectActions .delete{
+	color: #f85177;
+	display: block;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIEW PROJECT PAGE*/
+.projectView{
+	margin-left: 300px;
+	width: 100%;
+}
+
+.projectView .subTitle{
+	margin-bottom: 55px;
+}
+
+.projectView section{
+	padding: 85px 10%;
+}
+
+.projectView section:nth-child(odd){
+	background-color: #f7f7f7;
+}
+
+.projectView section:nth-child(even){
+	background-color: #fff;
+}
+
+
+
+
+
+/*main project info*/
+.projectMain{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.projectMain .smallTitle{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.projectHero{
+	max-width: 550px;
+}
+
+
+
+
+
+/*project abstract*/
+.projectAbstract{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.abstractInfo{
+	max-width: 550px;
+}
+
+.abstractImage, .featuresImage, .clientLogo{
+	max-width: 475px;
+}
+
+
+
+
+/*project tech*/
+.tech{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.tech .subTitle{
+	width: 100%;
+}
+
+/*tech logos have a different coloured container for visibility*/
+.techImage{
+	background-color: #e7e7e7;
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+/*project features*/
+.featuresContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.projectFeatures ul{
+	max-width: 550px;
+	list-style-type: none;
+}
+
+.projectFeatures ul li{
+	margin: 35px 0;
+}
+
+
+
+
+
+/*project team*/
+.teamMembers{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.teamMembers .subTitle{
+	width: 100%;
+}
+
+.memberImage{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/*client info*/
+.clientInfo{
+	padding: 0 !important;
+}
+
+.clientInfo .title{
+	padding: 85px 10%;
+}
+
+.clientName{
+	background-color: #fff !important;
+}
+
+.aboutClient{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.aboutClient .subTitle{
+	width: 100%;
+}
+
+.aboutClient .copy{
+	max-width: 550px;
+}
+
+
+
+
+
+/*project gallery*/
+.gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.gallery .title{
+	width: 100%;
+	margin-bottom: 85px;
+}
+
+.galleryImage{
+	max-width: 200px;
+	max-height: 200px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.galleryImage img{
+	max-width: 100%;
+}
+
+
+
+
+
+/*pop up picture viewer (could use more styling honestly)*/
+.imagePop{
+	border: 3px solid #f85177;
+	padding: 25px;
+	display: none;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	left: 300px;
+	background-color: #fff;
+	min-width: 500px;
+	min-height: 500px;
+}
+
+.lgImage{
+	max-width: 80%;
+}
+
+.closeImage{
+	text-align: right;
+	width: 100%;
+	cursor: pointer;
+}
+
+.controls{
+	position: absolute;
+	bottom: 15px;
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+}
+
+.prev, .next{
+	width: 25px;
+	height: 25px;
+	border-top: 8px solid #000;
+	border-right: 8px solid #000;
+	cursor: pointer;
+}
+
+.prev{
+	transform: rotate(225deg);
+	margin-right: 50px;
+}
+
+.next{
+	transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CREATE PROJECT PAGE*/
+#newProject{
+	width: 100%;
+	margin-left: 300px;
+	margin-top: 85px;
+	margin-bottom: 85px;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 16px;
+}
+
+/*hidden input for home page thumbnail IF featured*/
+#homeImage{
+	max-height: 0px;
+	overflow-y: hidden;
+	opacity: 0;
+	display: none;
+}
+
+/*separates form sections*/
+.divider{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+	height: 2px;
+	border-radius: 100%;
+	background-color: #999;
+}
+
+#newProject .title{
+	margin-bottom: 85px;
+	grid-column: 1 / -1;
+	text-align: center;
+}
+
+#newProject .subTitle{
+	margin-bottom: 85px;
+	text-align: center;
+}
+
+#newProject .smallTitle{
+	margin-bottom: 40px;
+	margin-top: 34px;
+}
+
+#newProject form{
+	grid-column: 1 / -1;
+	max-width: 1200px;
+	margin: auto;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+ 	padding: 0 30px;
+ }
+
+
+
+
+
+/*MAIN INFO*/
+/*(can't get inputs to style properly on safari, sorry natalia!!)*/
+ .newProjGeneral{
+ 	display: flex;
+	display: -webkit-flex;
+ 	flex-direction: row !important;
+	-webkit-flex-direction: row !important;
+ 	justify-content: space-between;
+	-webkit-justify-content: space-between;
+ 	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+ }
+
+ .newProjGeneral .subTitle{
+ 	width: 100%;
+ }
+
+.generalMain .divider{
+	margin-bottom: 40px;
+
+}
+
+/*checkbox for "featured on home page"*/
+.featuredCheck{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.featuredCheckHolder{
+	height: 30px;
+	margin-left: 20px;
+}
+
+.featuredCheckHolder span{
+	line-height: 30px;
+	margin-left: 10px;
+}
+
+/*the actual checkbox input*/
+#feat{
+	 width: auto;
+}
+
+ .formSection{
+ 	margin-bottom: 85px;
+ 	display: flex;
+ 	flex-direction: column;
+ }
+
+.formSection .formHalf{
+	min-width: 480px;
+}
+
+.formHalf{
+	max-width: 40%;
+}
+
+
+
+
+
+/*FEATURES*/
+#featSection{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0px 30px;
+}
+
+#featSection .smallTitle{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+/*holds all input sections*/
+.newProjFeatures{
+	width: 100%;
+	display: flex;
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*holds both inputs required for feature add*/
+.featureInfo{
+	max-width: 460px;
+	margin-bottom: 30px;
+}
+
+.featureInfo textarea{
+	margin-bottom: 0;
+}
+
+#addFeat{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+/*TEAM MEMBERS*/
+.newProjTeam{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.addMembers{
+	display: flex;
+	flex-direction: column;
+}
+
+.newProjTeam .subTitle{
+	width: 100%;
+	margin-top: 85px;
+}
+
+.addInput{
+	width: 500px;
+}
+
+.selectContainer{
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+/*fake select input (also not great on safari)*/
+.styledSelect{
+	position: relative;
+	width: 460px;
+	height: 55px;
+	overflow: hidden;
+	border: 2px solid #f85177;
+	margin-right: 30px;
+}
+
+.styledSelect select{
+	position: relative;
+	width: 480px;
+	background: transparent;
+	-webkit-appearance: none;
+	border: none;
+	font-size: 16px;
+	font-family: 'Heebo', arial;
+	padding: 15px;
+}
+
+
+
+
+
+/*TECHNOLOGIES*/
+ .technologies{
+ 	width: 480px;
+ }
+
+ .check{
+ 	display: inline-block;
+ 	width: 120px;
+ 	line-height: 25px;
+ 	text-align: left;
+ }
+
+
+
+
+
+/*IMAGE GALLERY*/
+ .galleryFile{
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+ }
+
+ .newProjGallery{
+ 	padding: 0 30px;
+ 	margin-bottom: 10px;
+ }
+
+ .newProjGallery .subTitle{
+ 	width: 100%;
+ 	margin-top: 85px;
+ }
+
+ .galleryContainer{
+ 	display: flex;
+ 	flex-direction: row;
+ }
+
+ #addGallery{
+ 	padding-left: 30px;
+ }
+
+ #projGalleryImg{
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 1px;
+ 	height: 1px;
+ 	opacity: 0;
+ }
+
+
+
+
+
+/*CLIENT INFO*/
+.newProjClient{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.newProjClient .subTitle{
+	width: 100%;
+	margin-top: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*EDIT PROJECT PAGE*/
+
+/*general info image upload changes*/
+.imgEdit{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 0.5px solid #999;
+}
+
+.imgEdit .copy{
+	width: 100%;
+	color: #666;
+}
+
+.imgEdit .fileContainer{
+	max-width: 250px;
+}
+
+
+
+
+
+/*styling edits in gallery*/
+#galleryPreview{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0px 20px;
+}
+
+#editGallery{
+	display: flex;
+	flex-direction: column;
+}
+
+#uploadContainer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TEAM MEMBER ARCHIVE PAGE*/
+
+.memberArchiveContainer{
+	margin-left: 300px;
+	width: 100%;
+}
+
+.memberSingle_container{
+	width: 100%;
+}
+
+.memberSingle{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	max-width: 1200px;
+	margin: auto;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.memberSingle_container:nth-child(odd){
+	background-color: #f7f7f7;
+}
+
+.team_memberImage{
+	grid-column: 1 / 4;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 100px;
+}
+
+.m1{
+	margin-left: 50px;
+	text-align: left;
+}
+
+.team_memberInfo{
+	grid-column: 5 / 10;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px;
+}
+
+.team_memberActions{
+	grid-column: 12 / -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CREATE NEW TEAM MEMBER*/
+
+#createTeam{
+	width: 100%;
+	background-color: #fff;
+	margin-left: 300px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 16px;
+	justify-items: center;
+}
+
+#createTeam .title{
+	grid-column: 1 / -1;
+	text-align: center;
+	margin-top: 85px;
+	margin-bottom: 85px;
+}
+
+#teamMemberForm{
+	grid-column: 2 / -2;
+	padding: 0 30px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+#teamMemberForm form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#teamSubmit{
+	width: 100%;
+}
+
+
+#teamMemberForm form button{
+	border: none;
+	margin-top: 85px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TECHNOLOGY ARCHIVE*/
+
+#tech_container{
+	margin-left: 300px;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-width: 960px;
+}
+
+#tech_container .searchAdd{
+	width: 110%;
+	margin: 0 -30px;
+}
+
+
+.techSingle{
+	padding: 50px;
+	background-color: #f7f7f7;
+}
+
+.techSingle:nth-child(even){
+	background-color: #fff;
+}
+
+.techSingle .title{
+	text-align: center;
+}
+
+.techActions{
+	width: 80%;
+	margin: auto;
+}
+
+.techActions ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.techActions .delete a{
+	color: #f85711;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ADD NEW TECHNOLOGY*/
+
+#createTech{
+	margin-left: 300px;
+	width: 100%;
+}
+
+#createTech .title{
+	text-align: center;
+	margin-top: 85px;
+}
+
+#techForm{
+	margin: auto;
+	width: 500px;
+	padding: 85px 0;
+}
