@@ -12,7 +12,7 @@ class ProjectsController extends Controller
     //HOME PAGE
     public function home(){
       $projects = Projects::groupBy('project_id')->having('homeFeature', '>', 0)->get();//grabs the most recent 6 projects
-      $headerStyle = 'background-color: #01bec0;';
+      $headerStyle = 'background-color: transparent;';
       $footerStyle = 'background-color: #5549F9;';
       return view('pages.home')->with('projects', $projects)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle);
     }

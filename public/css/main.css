@@ -219,22 +219,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------NAVIGATION AND HEADER----------*/
 
 /*for mobile with hamburger menu*/
@@ -371,22 +355,6 @@ footer{
  }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -582,33 +550,55 @@ footer .content{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------HOME PAGE----------*/
 
 /*hero section*/
-#hero{
- width: 100%;
- padding: 145px 25px 0px 25px;
- background: linear-gradient(#01bec0, #00b0b2);
- background-image: url(../images/hero_bckgd.png), linear-gradient(#01bec0, #00b0b2);
- background-position: center top;
- background-repeat: no-repeat;
- overflow: hidden;
+
+/*header color onScroll*/
+.headerChange { background-color: #01bec0 !important;}
+
+#hero {
+
+  width: 100%;
+  height: 800px;
+  top: 0;
+  left: 0;
+  /*position: relative;*/
+/*  margin-bottom: 100px;*/
 }
+
+#heroVideo {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ /*  z-index: -1;*/
+   pointer-events: none;
+   overflow: hidden;
+}
+#heroVideo iframe {
+   width: 100vw;
+   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   min-height: 100vh;
+   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.videoOverlay {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 1;
+}
+
 
 #hero .title{
  text-align: left;
@@ -620,6 +610,10 @@ footer .content{
  font-size: 20px;
  line-height: 34px;
  margin: 0 auto;
+ top: 40%;
+ z-index: 2;
+ position: absolute;
+
 }
 
 #heroLinks{
@@ -639,20 +633,15 @@ footer .content{
  margin-top: 30px;
 }
 
-#heroImage img{
- max-height: 320px;
- max-width: 90%;
+@media screen and (max-width: 559px){
+  
+  #heroText{
+    top: 20%;
+    height: 100vh;
+  }
+
+
 }
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 600px){
 
@@ -671,10 +660,6 @@ footer .content{
 
    #heroLinks{
      grid-column: 2 / 7;
-   }
-
-   #heroImage{
-     grid-column: 2 / -2;
    }
 
  }
@@ -706,22 +691,7 @@ footer .content{
    margin: 0;
  }
 
- #heroImage{
-   width: 80%;
-   min-height: 400px;
-   text-align: center;
-   margin: auto;
- }
-
- #heroImage img{
-   justify-self: center;
-   max-height: 100%;
-   max-width: 100%;
- }
 }
-
-
-
 
 
 @media screen and (min-width: 960px){
@@ -733,16 +703,6 @@ footer .content{
  #heroText{
    width: 40%;
    float: left;
- }
-
- #heroImage{
-   width: 80%;
-   float: right;
-   margin-right: -10px;
- }
-
- #heroImage img{
-  max-width: 150%;
  }
 
  #heroLinks{
@@ -765,36 +725,17 @@ footer .content{
      padding-left: 25px;
    }
 
-   #heroImage{
-     grid-column: 8 / -1;
-     align-self: center;
-     width: 100%;
-   }
-
  }
 
 }
 
 
 
-
-
-
 @media screen and (min-width: 1280px){
 
- #heroImage{
-   margin-right: -200px;
-   margin-top: 115px;
-   float: right;
- }
-
- #heroImage img{
-   max-height: none;
-   max-width: none;
- }
 
  #heroText{
-   margin-top: 200px;
+   /*margin-top: 200px;*/
    width: 500px;
    float: left;
  }
@@ -822,12 +763,6 @@ footer .content{
 
  @supports (display: grid){
 
-   #heroImage{
-     grid-column: 8 / -1;
-     margin-right: 0;
-     margin-left: 50px;
-   }
-
    #heroText{
      grid-column: 1 / 7;
    }
@@ -850,7 +785,7 @@ footer .content{
 
 /*who we are section*/
 #whoWeAre{
-    padding: 100px 25px;
+    /*padding: 100px 25px;*/
 }
 
 #whoWeAre .subTitle{
@@ -1060,9 +995,10 @@ footer .content{
 }
 
 .projectTile .subTitle{
-   margin-left: 51px;
+   margin-left: 0;
    margin-top: 124px;
    margin-bottom: 13px;
+   padding-left: 0;
    color: #fff;
 }
 
@@ -1125,8 +1061,6 @@ footer .content{
 
 
 
-
-
 @supports (display:grid){
 
    #projectsWindow .content{
@@ -1170,10 +1104,6 @@ footer .content{
 }
 
 
-
-
-
-
 @media screen and (min-width: 650px){
 
    #projectsWindow .content{
@@ -1182,10 +1112,6 @@ footer .content{
    }
 
 }
-
-
-
-
 
 
 
@@ -1205,241 +1131,91 @@ footer .content{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*what we offer*/
+
 #offer{
-   padding: 75px 25px;
-   background-color: #fff;
-   width: 100%;
+  width: 100%;
+ /* height: 1000px;*/
+  margin: 100px auto;
 }
 
-#offer .content{
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-   grid-column-gap: 16px;
-   overflow: hidden;
+#offer{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  
 }
 
 .mainOffer{
-    grid-column: 1 / -1;
+  width: 100%;
+  align-content: center;
+  
 }
 
-#offer .subTitle{
-   color: #f85177;
-   margin-bottom: 45px;
+.mainOffer p{
+ text-align: center;
 }
 
-#offer .copy{
-    margin-bottom: 50px;
-}
 
-#offerButton{
+#offerButton {
    background-color: #f85177;
-   margin-bottom: 50px;
-   margin-left: 0;
-   width: 200px;
+   margin: 50px auto;
+   display: block;
+   
 }
 
-.offer{
-   max-width: 400px;
-   visibility: visible !important;
+
+#offer .content {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  /*flex: 1 48%;*/
+  justify-content: center;
+  /*background-color: red;*/
+  
 }
+
 
 .offer .smallTitle{
    margin-top: 22px;
-   margin-bottom: 22px;
+   margin-bottom: 16px;
+
+}
+
+.offer svg{
+  width: 60px;
+  height: 60px;
 }
 
 
 
 
+@media screen and (max-width: 650px){
 
+  #design, #development, #branding, #software{
 
+   margin-top: 20px;
 
-@media screen and (min-width: 650px){
+  }
 
- #design, #development, #branding, #software{
-   display: inline-block;
-   width: 275px;
-   margin-right: 40px;
-   margin-left: 30px;
- }
+  .offer {
 
+    flex: 1 100%;
+    padding: 3% 10%;
 
-
-
-
-
-
- @supports (display: grid){
-
-   #offer .content{
-     grid-template-columns: 47px repeat(12, 1fr) 47px;
-     grid-column-gap: 16px;
-   }
-
-   .mainOffer{
-     grid-column: 1 / -1;
-   }
-
-   #design, #development, #branding, #software{
-     display: block;
-     margin-left: 0;
-     margin-right: 0;
-     width: auto;
-   }
-
-   #design{
-     grid-column: 1 / 7;
-   }
-
-   #development{
-     grid-column: 9 / -1;
-   }
-
-   #branding{
-     grid-column: 1 / 7;
-   }
-
-   #software{
-     grid-column: 9 / -1;
-   }
-
- }
-
-}
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:960px){
-
-  #offer .content{
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
 }
 
 
+@media screen and (min-width:651px){
 
-
-
-
-
-
-@media screen and (min-width: 1024px){
-
- #offer{
-   padding-top: 110px;
-   padding-bottom: 143px;
- }
-
- .mainOffer{
-   width: 300px;
-   float: left;
- }
-
- #design, #development, #branding, #software{
-   width: 230px;
-   float: right;
-   display: inline-block;
-   margin-right: 60px;
- }
-
-
-
-
-    @supports (display:grid){
-
-       .mainOffer{
-         grid-column: 1 / 6; /*2 / 6*/
-         grid-row: 1 / 3;
-         align-self: center;
-         width: auto;
-       }
-
-       #design, #development, #branding, #software{
-         width: 230px;
-         display: block;
-         margin-right: 0;
-       }
-
-       #design{
-         grid-column: 7 / 11; /*7 / 10*/
-         grid-row: 1 / 2;
-       }
-
-       #development{
-         grid-column: 11 / 15;
-         grid-row: 1 / 2;
-       }
-
-       #branding{
-         grid-column: 7 / 11;
-         grid-row: 2 / 3;
-       }
-
-       #software{
-         grid-column: 11 / 15;
-         grid-row: 2 / 3;
-       }
-
-    }
-
-
+  .offer {
+    flex: 1 48%;
+    padding: 3% 5%;
+  }
 }
-
-
-
-
-
-
-
-
-@media screen and (min-width: 1200px){
-
-   #design, #development, #branding, #software{
-       max-width: 280px;
-   }
-
-
-     @supports (display: grid){
-
-       #design, #development, #branding, #software{
-           width: auto;
-       }
-
-   }
-}
-
-
-
-
-
-
-
-
 
 
 
