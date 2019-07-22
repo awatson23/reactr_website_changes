@@ -21,6 +21,10 @@
 	<h2 class="hide">We Are Reactr.</h2>
 	<div class="content">
 
+		<div class="videoOverlay">
+			
+		</div>
+
 		<div id="heroText">
 			<div id="heroBlurb">
 				<p class="title">We Are Reactr.</p>
@@ -33,10 +37,17 @@
 			</div>
 		</div>
 
-		<div id="heroImage">
+		<div id="heroVideo">
+               
+                <iframe src="https://player.vimeo.com/video/213679775?background=1&autoplay=1&loop=1&muted=1" width="100%" height="100%" frameborder="0" allow="fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                <p><a href="https://vimeo.com/213679775"></a><a href="https://vimeo.com/user65576705"></a><a href="https://vimeo.com"></a>   
+            
+        </div>
+
+		<!-- <div id="heroImage">
 			<img src="images/hero.png" alt="hero image">
 		</div>
-
+ -->
 	</div>
 </section>
 
@@ -90,16 +101,45 @@
 <section id="offer">
 	<h2 class="hide">What We Offer</h2>
 
+
+	<div class="mainOffer">
+		<p class="subTitle">WHAT WE OFFER</p>
+		<p class="copy">Each Reactr project is developed by a team of students dedicated to that project, </br> supervised and supported by Fanshawe faculty and staff.</p>
+		<p class="copy">The work that we undertake falls into these main categories:</p>
+		<div id="offerButton" class="hireUs button hvr-grow-shadow"><a href="#contactUs">WORK WITH US</a></div>
+	</div>
+
 	<div class="content">
-		<div class="mainOffer">
-			<p class="subTitle">WHAT WE OFFER</p>
-			<p class="copy">Each Reactr project is developed by a team of students dedicated to that project, supervised and supported by Fanshawe faculty and staff.</p>
-			<p class="copy">The work that we undertake falls into these main categories:</p>
-			<div id="offerButton" class="hireUs button hvr-grow-shadow"><a href="#contactUs">WORK WITH US</a></div>
-		</div>
 
 		<div id="design" class="offer">
-			<img src="images/icon_design.svg" alt="web design icon" width="60">
+			<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 54.5">
+				<defs>
+				<style>
+				  .cls-1 {
+				    fill: none;
+				    stroke: #f85177;
+				    stroke-miterlimit: 10;
+				    stroke-width: 2px;
+				  }
+
+				  .cls-2 {
+				    fill: #f85177;
+				  }
+				</style>
+				</defs>
+				<title>icon_design</title>
+				<rect class="cls-1" x="1" y="1" width="59" height="40.5" rx="5.94" ry="5.94"/>
+				<line class="cls-1" x1="1" y1="31" x2="60" y2="31"/>
+				<circle class="cls-2" cx="30.5" cy="36.5" r="1.5"/>
+				<line class="cls-1" x1="24" y1="49.5" x2="26.5" y2="41.5"/>
+				<line class="cls-1" x1="34.5" y1="41.5" x2="37" y2="49.5"/>
+				<rect class="cls-1" x="16" y="49.5" width="29" height="4"/>
+				<g id="design">
+				<rect class="cls-1" x="20.5" y="9" width="12" height="11"/>
+				<circle class="cls-1" cx="34.5" cy="19" r="6"/>
+				</g>
+			</svg>
+			<!-- <img src="images/icon_design.svg" alt="web design icon" width="60"> -->
 			<p class="smallTitle">WEB DESIGN and development</p>
 			<p class="copy">Creation of a customized informational Web site for a company, with content management features.</p>
 		</div>
@@ -261,7 +301,7 @@
 </section>
 
 
-<section id="ourSponsors">
+<!-- <section id="ourSponsors">
 	<h2 class="hide">Thank You to Our Sponsors</h2>
 
 	<div id="thankYou">
@@ -282,7 +322,7 @@
 		</div>
 
 	</div>
-</section>
+</section> -->
 
 
 <section id="contactUs">
@@ -363,5 +403,6 @@
 @section('pagescript')
 <script src="/js/ie.js"></script>
 <script src="/js/indexAnimation.js"></script>
+
 
 @endsection

@@ -46,9 +46,21 @@ var mainComputer = document.querySelector("#heroImage"),
 	reasonsContent.style.display = "none";
 
 //show main hero image on load- do not wait for scroll
-mainComputer.style.visibility = "visible";
-mainComputer.classList.add('slide');
+// mainComputer.style.visibility = "visible";
+// mainComputer.classList.add('slide');
 
+
+
+//Homepage Header background changes on Scroll
+window.onscroll = function() {
+    console.log(window.pageYOffset);
+    var header = document.getElementById('singleHeader');
+    if ( window.pageYOffset > 100 ) {
+        header.classList.add("headerChange");
+    } else {
+        header.classList.remove("headerChange");
+    }
+}
 
 
 
@@ -67,7 +79,7 @@ function doSomething(scroll_pos) {
 	}else{
 		console.log("screen is too small!");
 		//make sure main her oimage is visible on mobile
-		mainComputer.style.visibility = "visible";
+		// mainComputer.style.visibility = "visible";
 	}
 }
 
@@ -601,3 +613,6 @@ moreButton.addEventListener('click', readMore);
 lessButton.addEventListener('click', readMore);
 
 dots.forEach(dot => dot.addEventListener('click', showSlides));
+
+
+

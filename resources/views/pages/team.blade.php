@@ -6,7 +6,7 @@
 
 @section('content')
   <h1 class="hide">Reactr Team</h1>
-  	<section id="teamHero">
+  	<!-- <section id="teamHero">
 			<h2 class="hide">The Student Learning Experience</h2>
 			<div class="content">
 
@@ -24,7 +24,7 @@
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 
 
 
@@ -42,7 +42,7 @@
 		</section>
 
 
-
+<!-- 
 		<section id="ourTeam">
 			<h2 class="hide">Our Team: Academic Leaders</h2>
 
@@ -131,7 +131,7 @@
 				</section>
 
 			</div>
-		</section>
+		</section> -->
 
 		
 @endsection
