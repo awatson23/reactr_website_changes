@@ -60,6 +60,8 @@ Route::get('/team', 'TestimonialController@getAllTestimonials');
 
 Route::get('/opportunities/{type}', 'JobController@getJobInfo');
 
+Route::get('/careers', 'CareerController@index');
+
 //FORM MAIL STUFF
 Route::post('/homeSubmit', 'FormController@homeMail');
 Route::post('/teamSubmit', 'FormController@teamMail');
