@@ -296,18 +296,47 @@ footer{
 }
 
 #mainNav ul li a{
+  text-decoration: none;
+  position: relative;
  font-size: 20px;
  font-weight: 700;
  text-align: center;
  text-transform: uppercase;
 }
 
+/*css transition for navbar underline on hover*/
 
+ 
 
+#mainNav ul li a:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  border-bottom: 2.5px solid #fff;
+  transition: 0.4s;
+}
 
+#mainNav ul li a:hover:after {
+  width: 100%;
+}
 
+#mainNav ul li a.activeHome {
+  border-bottom: 2.5px solid #fff;
+}
 
+#mainNav ul li a.activeAbout {
+  border-bottom: 2.5px solid #fff;
+}
 
+#mainNav ul li a.activeProjects {
+  border-bottom: 2.5px solid #fff;
+}
+
+#mainNav ul li a.activeCareers {
+  border-bottom: 2.5px solid #fff;
+}
 
 /*for desktop*/
 @media screen and (min-width: 960px){
@@ -3946,12 +3975,16 @@ section:nth-child(6n+7) .projectInfo a{
 #workingAtReactr{
  background-color: #fff;
  max-width: 100%;
+ display: flex;
+ flex-direction: column;
 }
 
 #workingAtReactr .content{
  max-width: 1366px;
  margin: auto;
- padding: 100px 25px;
+ padding-left: 100px;
+ padding-right: 100px;
+ padding-top: 50px;
 }
 
 #workingAtReactr .subTitle{
@@ -3972,24 +4005,36 @@ section:nth-child(6n+7) .projectInfo a{
  text-align: right;
 }
 
+#reactrVideo iframe {
+  width: 100%;
+  margin: 0vw auto;
+  
+  
+}
+
 
 
 
 @media screen and (min-width: 1024px){
 
- #workingAtReactr .copy{
-   width: 60%;
-   column-count: 2;
-   column-gap: 50px;
-   margin: auto;
-   margin-bottom: 50px;
- }
+#workingAtReactr {
+  display: flex;
+  flex-direction: row;
+}
 
- #workingAtReactr .subTitle{
-   width: 60%;
-   margin: auto;
-   margin-bottom: 50px;
- }
+#reactrVideo {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#workingAtReactr .content {
+  width: 30%;
+  padding: 0px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+ 
 
  #workingAtReactr .smallTitle{
    width: 60%;
@@ -4000,26 +4045,6 @@ section:nth-child(6n+7) .projectInfo a{
 
 
  @supports (display: grid){
-
-   #workingAtReactr .content{
-     display: grid;
-     grid-template-columns: 47px repeat(12, 1fr) 47px;
-     grid-column-gap: 16px;
-   }
-
-   #workingAtReactr .subTitle{
-     grid-column: 4 / -1;
-     width: auto;
-     margin: 0;
-     margin-bottom: 40px;
-     text-align: left;
-   }
-
-   #workingAtReactr .copy{
-     width: auto;
-     margin-bottom: 30px;
-     grid-column: 4 / 12;
-   }
 
    #workingAtReactr .smallTitle{
      grid-column: 4 / 12;
@@ -4207,7 +4232,7 @@ section:nth-child(6n+7) .projectInfo a{
  grid-column: 1 / -1;
  grid-row-start: 2;
  text-align: left;
- transition: all 0.3s ease;`
+ transition: all 0.3s ease;
 }
 
 #teamWords .fade{
@@ -4454,7 +4479,10 @@ section:nth-child(6n+7) .projectInfo a{
 }
 
 #people .content{
- padding: 60px 25px;
+padding-top: 100px;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-bottom: 25px;
  max-width: 1366px;
  margin: auto;
 }
@@ -4495,7 +4523,8 @@ section:nth-child(6n+7) .projectInfo a{
 @media screen and (min-width: 960px){
 
  #people .content{
-   padding: 10px 120px;
+  padding: 50px 120px;
+   margin-top: 70px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -4519,7 +4548,7 @@ section:nth-child(6n+7) .projectInfo a{
      display: grid;
      grid-template-columns: 47px repeat(12, 1fr) 47px;
      grid-column-gap: 16px;
-     padding: 0 25px;
+     padding: 75px  35px;
    }
 
    #peopleMain{
@@ -4530,7 +4559,7 @@ section:nth-child(6n+7) .projectInfo a{
    #peopleList{
      grid-column: 9 / -1;
      width: auto;
-     padding-bottom: 500px;
+    padding-bottom: 100px;
    }
 
  }
