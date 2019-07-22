@@ -3784,11 +3784,20 @@ section:nth-child(6n+7) .projectInfo a{
 #reactrVideo iframe {
   width: 100%;
   margin: 0vw auto;
-  
-  
 }
 
+#reactrVideo {
+  display: block;
+}
 
+@media screen and (min-width: 700px) {
+  #workingAtReactr .content {
+    width: 50%;
+    padding: 0px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+  }
+}
 
 
 @media screen and (min-width: 1024px){
@@ -3807,8 +3816,6 @@ section:nth-child(6n+7) .projectInfo a{
 #workingAtReactr .content {
   width: 30%;
   padding: 0px;
-  margin-top: 7%;
-  margin-bottom: 7%;
 }
  
 
@@ -4002,6 +4009,7 @@ section:nth-child(6n+7) .projectInfo a{
  max-width: 100%;
  padding: 70px 25px 40px 25px;
  display: grid;
+ margin-bottom: 30%;
 }
 
 .wordsContainer{
