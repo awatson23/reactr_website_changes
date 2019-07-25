@@ -13,8 +13,9 @@
           <li><a href="/">Home</a></li>
           <li><a href="/team">Team</a></li>
           <li><a href="/archive">Projects</a></li>
-          <li><a href="{{ action("ProjectsController@home") }}#contactUs">Contact</a></li>
+          <li><a href="/careers" @if (isset($activeCareers))class="{{$activeCareers}}" @endif>Careers</a></li>
           <li><a href="{{ action("ProjectsController@home") }}#contactUs">Partner</a></li>
+          <li><a href="/contact" @if (isset($activeContact))class="{{$activeContact}}" @endif>Contact</a></li>
         </ul>
       </nav>
 
