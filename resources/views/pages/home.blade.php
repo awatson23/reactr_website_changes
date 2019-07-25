@@ -28,7 +28,7 @@
 		<div id="heroText">
 			<div id="heroBlurb">
 				<p class="title">We Are Reactr.</p>
-				<p>An experiential program at Fanshawe that links student teams with companies to develop Web and digital media solutions.</p>
+				<p class="copy">An experiential program at Fanshawe that links student teams with companies to develop Web and digital media solutions.</p>
 			</div>
 
 			<div id="heroLinks">
@@ -82,7 +82,7 @@
 		<div class="projectTile">
 			<div class="tileInfo">
 				<div class="tileText">
-					<p class="subTitle">{{$project->project_type}}</p>
+					<!-- <p class="subTitle">{{$project->project_type}}</p> -->
 					<p class="projectTitle">{{$project->project_name}}</p>
 				</div>
 				<a href="/details/{{$project->project_id}}" class="learnMore">VIEW PROJECT<span> &#9002;</span></a>
@@ -117,13 +117,15 @@
 				<style>
 				  .cls-1 {
 				    fill: none;
-				    stroke: #f85177;
+				    /*stroke: #f85177;*/
+				    stroke: #fff;
 				    stroke-miterlimit: 10;
 				    stroke-width: 2px;
 				  }
 
 				  .cls-2 {
-				    fill: #f85177;
+				    /*fill: #f85177;*/
+				    fill: #fff;
 				  }
 				</style>
 				</defs>
@@ -145,19 +147,105 @@
 		</div>
 
 		<div id="development" class="offer">
-			<img src="images/icon_development.svg" alt="web development icon" width="60">
+			<!-- <img src="images/icon_development.svg" alt="web development icon" width="60"> -->
+			<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 54.5">
+				<defs>
+				<style>
+				  .cls-1 {
+				    fill: none;
+				    stroke: #fff;
+				    stroke-miterlimit: 10;
+				    stroke-width: 2px;
+				  }
+
+				  .cls-2, .cls-3 {
+				    fill: #fff;
+				  }
+
+				  .cls-3 {
+				    font-size: 16.85px;
+				    font-family: Ubuntu-Bold, Ubuntu;
+				    font-weight: 700;
+				  }
+				</style>
+				</defs>
+				<title>icon_development</title>
+				<rect class="cls-1" x="1" y="1" width="59" height="40.5" rx="5.94" ry="5.94"/>
+				<line class="cls-1" x1="1" y1="31" x2="60" y2="31"/>
+				<circle class="cls-2" cx="30.5" cy="36.5" r="1.5"/>
+				<line class="cls-1" x1="24" y1="49.5" x2="26.5" y2="41.5"/>
+				<line class="cls-1" x1="34.5" y1="41.5" x2="37" y2="49.5"/>
+				<rect class="cls-1" x="16" y="49.5" width="29" height="4"/>
+				<text class="cls-3" transform="translate(17.25 21.35)">&lt;/&gt;</text>
+			</svg>
 			<p class="smallTitle">large scale web application development</p>
 			<p class="copy">Planning and building of a complex, Web-based application to address more specific company needs.</p>
 		</div>
 
 		<div id="branding" class="offer">
-			<img src="images/icon_branding.svg" alt="branding icon" width="73">
+			<!-- <img src="images/icon_branding.svg" alt="branding icon" width="73"> -->
+			<svg id="Layer_4" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.25 55.25">
+				<defs>
+				<style>
+				  .cls-1 {
+				    fill: none;
+				    stroke: #fff;
+				    stroke-miterlimit: 10;
+				    stroke-width: 2px;
+				  }
+
+				  .cls-2 {
+				    fill: #fff;
+				  }
+				</style>
+				</defs>
+				<title>icon_branding</title>
+				<polyline class="cls-1" points="43 49 43 54.25 1 54.25 1 1 43 1 43 28"/>
+				<rect class="cls-1" x="30" y="27.63" width="42.25" height="21.63"/>
+				<rect class="cls-1" x="47.88" y="1.88" width="24.38" height="14.75"/>
+				<circle class="cls-2" cx="10.53" cy="12.03" r="2.78"/>
+				<line class="cls-1" x1="17.69" y1="12.03" x2="33.25" y2="12.03"/>
+				<circle class="cls-2" cx="38.45" cy="36.58" r="2.78"/>
+				<line class="cls-1" x1="45.6" y1="36.58" x2="61.17" y2="36.58"/>
+				<circle class="cls-2" cx="60" cy="9.25" r="2.78"/>
+			</svg>
+
 			<p class="smallTitle">Graphic design and BRANDING</p>
 			<p class="copy">The Reactr team works with a company to create a design and branding document for Web and print use.</p>
 		</div>
 
 		<div id="software" class="offer">
-			<img src="images/icon_software.svg" alt="software icon" width="60">
+			<!-- <img src="images/icon_software.svg" alt="software icon" width="60"> -->
+			<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 54.5">
+				<defs>
+				<style>
+				  .cls-1 {
+				    fill: none;
+				    stroke: #fff;
+				    stroke-miterlimit: 10;
+				    stroke-width: 2px;
+				  }
+
+				  .cls-2 {
+				    fill: #fff;
+				  }
+				</style>
+				</defs>
+				<title>icon_software</title>
+				<rect class="cls-1" x="1" y="1" width="59" height="40.5" rx="5.94" ry="5.94"/>
+				<line class="cls-1" x1="1" y1="31" x2="60" y2="31"/>
+				<circle class="cls-2" cx="30.5" cy="36.5" r="1.5"/>
+				<line class="cls-1" x1="24" y1="49.5" x2="26.5" y2="41.5"/>
+				<line class="cls-1" x1="34.5" y1="41.5" x2="37" y2="49.5"/>
+				<rect class="cls-1" x="16" y="49.5" width="29" height="4"/>
+				<circle class="cls-1" cx="30.5" cy="16.5" r="10"/>
+				<path class="cls-1" d="M372.73,666v-8.62a1.38,1.38,0,0,0-1.38-1.38h-2.12" transform="translate(-344.5 -639.5)"/>
+				<path class="cls-1" d="M375.88,666V652.9a1.48,1.48,0,0,0-1.38-1.57h-2.12" transform="translate(-344.5 -639.5)"/>
+				<path class="cls-1" d="M378.31,665.25V657.6c0-1.11.62-2,1.38-2h.54" transform="translate(-344.5 -639.5)"/>
+				<circle class="cls-1" cx="24.16" cy="16.5" r="1.5"/>
+				<circle class="cls-1" cx="36.93" cy="16.1" r="1.5"/>
+				<circle class="cls-1" cx="27.16" cy="11.83" r="1.5"/>
+			</svg>
 			<p class="smallTitle">digital media consultation and planning</p>
 			<p class="copy">Planning meetings with a company to define a longer-term digital strategy and development  timelines.</p>
 		</div>
@@ -268,7 +356,7 @@
 
 		<div id="testimonials">
 
-		<p class="subTitle">what our clients had to say</p>
+			<p class="subTitle">what our clients had to say</p>
 
 			<div id="testimonialContainer">
 
@@ -296,104 +384,6 @@
 
 			<div class="bullets">
 			</div>
-		</div>
-	</div>
-</section>
-
-
-<!-- <section id="ourSponsors">
-	<h2 class="hide">Thank You to Our Sponsors</h2>
-
-	<div id="thankYou">
-		<p class="title">Thank you to our sponsors.</p>
-	</div>
-
-	<div id="sponsorArea">
-		<div class="sponsorLogo">
-			<img src="images/logo_nserc.svg" alt="nserc logo" width="157">
-		</div>
-
-		<div class="sponsorLogo">
-			<img src="images/logo_fanshawe.svg" alt="fanshawe logo" width="183">
-		</div>
-
-		<div class="sponsorLogo">
-			<img src="images/logo_oce.svg" alt="oce logo" width="131">
-		</div>
-
-	</div>
-</section> -->
-
-
-<section id="contactUs">
-	<h2 class="hide">Contact Us</h2>
-
-	<div class="content">
-		<div id="contactInfo">
-			<p class="subTitle">Contact Us</p>
-
-			<div class="infoBlock">
-				<p class="smallTitle">PHONE</p>
-				<p class="copy"><span>+1 (519) 452 4430</span> Ext 6409</p>
-			</div>
-
-			<div class="infoBlock">
-				<p class="smallTitle">ADDRESS</p>
-				<p class="copy">Fanshawe College London Downtown Campus</p>
-				<p>Howard W. Rundle Building,</p>
-				<p>137 Dundas Street</p>
-				<p>London, ON N6A 1E9</p>
-				<p>CANADA</p>
-			</div>
-
-			<div class="infoBlock">
-				<p class="smallTitle">EMAIL</p>
-				<p class="copy">jobs@reactr.ca</p>
-				<p class="copy">hire@reactr.ca</p>
-				<p class="copy"><span>info@reactr.ca</span></p>
-			</div>
-		</div>
-
-		<div id="contactForm">
-
-			@if (session('status'))
-			<div class="status-success">
-				{{ session('status') }}
-			</div>
-			@endif
-
-      @if ($errors->any())
-			<div class="errors">
-				<ul>
-					@foreach ($errors->all() as $error)
-					<li>{{ $error }}</li>
-					@endforeach
-				</ul>
-			</div>
-			@endif
-
-			<div id="formBlurb">
-				<p class="subTitle">get in touch</p>
-				<p class="copy">Fill out this form to get more information about working with Reactr.</p>
-			</div>
-
-			{{Form::open(['url'=>'/homeSubmit'])}}
-				{{ csrf_field() }}
-				<input name="name" id="name" type="text" placeholder="Full Name" required>
-				<input name="email" id="email" type="email" placeholder="Email" required>
-
-				<select name="interest" id="interest">
-					<option value="contact us">Contact Reactr</option>
-					<option value="hire us">Work with Us</option>
-					<option value="other">Other</option>
-				</select>
-
-				<textarea name="body" id="message" placeholder="Message..." required></textarea>
-				<input type="submit" id="submit" class="button">
-				<!-- <button id="submit" class="button">submit</button> -->
-
-			{{Form::close()}}
-
 		</div>
 	</div>
 </section>

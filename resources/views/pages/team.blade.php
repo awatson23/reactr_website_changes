@@ -113,23 +113,6 @@
 					</div>
 				</div>
 
-
-				<section id="teamWords">
-					<h3 class="hide">Words from our Team</h3>
-					<p class="subTitle">words from our team</p>
-
-					<div id="wordsFromTeam">
-						@foreach ($testimonials as $testimonial)
-						<div class="wordsContainer">
-							<p class="copy">{{$testimonial->testimony}}</p>
-							<p class="teamName">{{$testimonial->teams->st_team_fname}} {{$testimonial->teams->st_team_lname}} -{{$testimonial->teams->st_team_bio}}</p>
-						</div>
-						@endforeach
-					</div>
-
-					<div id="teamBullets"></div>
-				</section>
-
 			</div>
 		</section>
 
@@ -137,6 +120,6 @@
 @endsection
 
 @section('pagescript')
-    <script src="/js/teamWords.js"></script>
+    <!-- <script src="/js/teamWords.js"></script> -->
     <script src="/js/fileUpload.js"></script>
 @endsection
