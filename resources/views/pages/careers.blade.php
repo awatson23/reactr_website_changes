@@ -6,7 +6,7 @@
 
 @section('content')
 
-<section id="people">
+	<section id="people">
 			<h2 class="hide">People We Are Looking For</h2>
 			<div class="content">
 
@@ -29,14 +29,11 @@
 					</ul>
 
 				</div>
-                </div>
+            </div>
 				
 
 		</section>
-			
-		
-		<section id="jobsApply">
-				<section id="jobs">
+
 			<h2 class="hide">Available Jobs at Reactr</h2>
 			<div id="jobContainer" class="content">
 
@@ -82,6 +79,7 @@
 			</div>
 		</section>
 
+
 		
 		<div id="applyContainer">
 					<section id="applyHere">
@@ -110,30 +108,76 @@
               <div class="formBottom">
 							<p id="formText">Mandatory fields *</p>
 							<input type="submit" name="submit" class="button hvr-grow-shadow" id="submit" value="submit">
-            </div>
 
-            @if (session('status'))
-            <div class="status-success">
-              {{ session('status') }}
-            </div>
-            @endif
+		<!-- <div id="applyContainer">
+			<section id="applyHere">
 
-            @if (session('errors'))
-            <div class="errors">
-              {{$errors}}
+				<h3 class="hide">Application Form</h3>
+				<p class="subTitle">if this sounds like you, apply here!</p>
+
+				{{ Form::open(array('url' => '/teamSubmit', 'files' => true)) }}
+					<input name="firstName" placeholder="First Name *" type="text" value="{{ old('firstName') }}" title="please enter your first name." required>
+					<input name="lastName" placeholder="Last Name *" type="text" value="{{ old('lastName') }}" title="please enter your last name." required>
+					<input name="program" placeholder="Program *" type="text" value="{{ old('program') }}" title="please enter your program." required>
+					<input name="year" placeholder="Year (1st, 2nd, 3rd) *" type="text" value="{{ old('year') }}" title="please enter your program year." required>
+					<input name="studentNumber" placeholder="Student Number *" value="{{ old('studentNumber') }}"title="please enter your student number." type="number"  required>
+					<input name="linkedin" placeholder="LinkedIn *" type="url" value="{{ old('linkedin') }}" title="please enter your linked in link." oninvalid="this.setCustomValidity('URL requires http://')" oninput="setCustomValidity('')" required>
+					<input name="folemail" placeholder="FOL Email *" type="email" value="{{ old('folemail') }}" title="please enter your fanshawe online email (ending in @fanshaweonline.ca)." required>
+					<input name="email" placeholder="Non-FOL email *" type="email" value="{{ old('email') }}" title="please enter your non fanshawe online email." required>
+					<input name="skills" placeholder="Skills *" type="text" id="skills" value="{{ old('skills') }}" title="please enter your skills." required>
+
+        	<div id="resumeRow">
+             		<div id="resumeContainer">
+                		<label for="resume" id="resumeLabel">Upload resume * <i class="fas fa-upload"></i></label>
+                    <input type="file" name="resume" id="resumeInput" accept=".doc, .rtf, .docx, .txt, .odf, .pdf, .xml" title="make sure the file ends in .doc, .rtf, .docx, .txt, .odf, .pdf or .xml" required>
+                 </div>
+						     <input name="portfolio" placeholder="Portfolio Link *" type="url" value="{{ old('portfolio') }}" title="please enter your portfolio link" oninvalid="this.setCustomValidity('URL requires http://')" oninput="setCustomValidity('')" required>
             </div>
-            @endif
+	        <div class="formBottom">
+				<p id="formText">Mandatory fields *</p>
+				<input type="submit" name="submit" class="button hvr-grow-shadow" id="submit" value="submit">
+	        </div>
+
+	        @if (session('status'))
+	        <div class="status-success">
+	          {{ session('status') }}
+	        </div>
+	        @endif
+
+	        @if (session('errors'))
+	        <div class="errors">
+	          {{$errors}}
+	        </div>
+	        @endif
 
 						{{ Form::close() }}
 
-					</section>
-				</div>
-			</section>
+		</section>
+	</div> -->
+	
+	<section id="teamWords">
+		<h3 class="hide">Words from our students</h3>
+		<p class="subTitle">words from our students</p>
+
+		<div id="wordsFromTeam">
+			@foreach ($testimonials as $testimonial)
+			<div class="wordsContainer">
+				<p class="copy">{{$testimonial->testimony}}</p>
+				<p class="teamName">{{$testimonial->teams->st_team_fname}} {{$testimonial->teams->st_team_lname}} -{{$testimonial->teams->st_team_bio}}</p>
+			</div>
+			@endforeach
+		</div>
+
+		<div id="teamBullets"></div>
+	</section>
+
+
 
 @endsection
 
 
 @section('pagescript')
+<script src="/js/teamWords.js"></script>
 <script src="/js/ie.js"></script>
 <script src="/js/indexAnimation.js"></script>
 
