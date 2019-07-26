@@ -101,16 +101,7 @@
 
 					</div>
 
-					<div class="member" id="member5">
-						<img src="/images/natalia.png" alt="Tina VanderVecht" class="memberPhoto">
-						<p class="smallTitle">Tina VanderVecht</p>
-						<p>Assistant Level 3</p>
-						<ul>
-							<li><a href="https://www.linkedin.com/in/tinavv/"><img src="/images/linkedIn.svg" alt="linkedin" class="teamIcon" width="21"></a></li>
-							<li><a href="mailto:tvandervecht@gmail.com"><img src="/images/at.svg" alt="@ something" class="teamIcon" width="21"></a></li>
-						</ul>
-
-					</div>
+				
 				</div>
 
 			</div>

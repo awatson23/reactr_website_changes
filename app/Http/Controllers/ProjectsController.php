@@ -13,7 +13,7 @@ class ProjectsController extends Controller
     public function home(){
       $projects = Projects::groupBy('project_id')->having('homeFeature', '>', 0)->get();//grabs the most recent 6 projects
       $headerStyle = 'background-color: transparent;';
-      $footerStyle = 'background-color: #5549F9;';
+      $footerStyle = 'background-color: #01bec0';
       $activeHome = 'activeHome';
       return view('pages.home')->with('projects', $projects)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle)->with('activeHome', $activeHome);
     }
@@ -27,8 +27,8 @@ class ProjectsController extends Controller
       $projects =  Projects::with('awards')->orderBy('project_year', 'desc')->get();
 
       //$projects = Projects::all()->awards->sortByDesc("project_date");
-      $headerStyle = 'background-color: #f85177 !important;';
-      $footerStyle = 'background-color: #393939 !important;';
+      $headerStyle = 'background-color: #01bec0 !important;';
+      $footerStyle = 'background-color: #01bec0 !important;';
       $activeProjects = 'activeProjects';
       return view('pages.archive')->with('projects', $projects)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle)->with('activeProjects', $activeProjects);
       //return $projects;

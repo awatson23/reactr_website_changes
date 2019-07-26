@@ -54,7 +54,7 @@
 window.onscroll = function() {
     console.log(window.pageYOffset);
     var header = document.getElementById('singleHeader');
-    if ( window.pageYOffset > 100 ) {
+    if ( window.pageYOffset > 620 ) {
         header.classList.add("headerChange");
     } else {
         header.classList.remove("headerChange");
@@ -67,7 +67,7 @@ window.onscroll = function() {
 //SCROLL ANIMATIONS
 var last_pos = 0;
 var ticking = false;
-var scroll_pos = window.scrollY;
+var scroll_pos = window.pageYOffset;
 
 /*function doSomething(scroll_pos) {
 	console.log(scroll_pos);
@@ -157,7 +157,7 @@ function slideOffers(scroll_pos){
 }
 
 function Counter(scroll_pos) {
-	if (scroll_pos > 1000 && scroll_pos < 6000) {
+	if (scroll_pos > 3600 && scroll_pos < 6000) {
 		countUp();
 	}
 }
