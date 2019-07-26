@@ -36,8 +36,8 @@
 					<a href="#jobContainer" class="smallTitle">view careers</a>
 				</div>
 
-			<div id="reactrVideo">
-				<iframe src="https://player.vimeo.com/video/213679775" width="100%" height="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+			<div id="reactrVideo">		
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/vc2KrWLOX5M?rel=0&amp;showinfo=0&modestbranding=0&rel=0&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 

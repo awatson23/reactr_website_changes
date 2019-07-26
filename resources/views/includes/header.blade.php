@@ -16,10 +16,10 @@
 					<h2 class="hide">Main Navigation</h2>
 					<ul class="navList">
             <li><a href="/" @if (isset($activeHome))class="{{$activeHome}}" @endif>Home</a></li>
-            <li><a href="/team" @if (isset($activeAbout))class="{{$activeAbout}}" @endif>Team</a></li>
+            <li><a href="/team" @if (isset($activeAbout))class="{{$activeAbout}}" @endif>About</a></li>
 			<li><a href="/archive" @if (isset($activeProjects))class="{{$activeProjects}}" @endif>Projects</a></li>
 			<li><a href="/careers" @if (isset($activeCareers))class="{{$activeCareers}}" @endif>Careers</a></li>
-			<li><a href="{{ action("ProjectsController@home") }}#contactUs">Partner</a></li>
+			<li><a href="/partner" @if (isset($activePartner))class="{{$activePartner}}" @endif">Partner</a></li>
 			<li><a href="/contact" @if (isset($activeContact))class="{{$activeContact}}" @endif>Contact</a></li>
 			</nav>
 
