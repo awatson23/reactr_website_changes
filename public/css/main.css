@@ -640,8 +640,6 @@ footer .content{
  line-height: 34px;
  z-index: 2;
  position: absolute;
- overflow: hidden;
-
 }
 
 #hero .title{
@@ -3234,10 +3232,10 @@ section:nth-child(6n+7) .projectInfo a{
 
 #teamHero{
   background: linear-gradient(to bottom right, #5549F9 30%, rgb(76, 65, 238) 30%);
- max-width: 100%;
- margin-top: 80px;
- padding-bottom: 80px;
- overflow: hidden;
+  max-width: 100%;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
 #teamHero .content{
