@@ -32,8 +32,8 @@
 			</div>
 
 			<div id="heroLinks">
-				<div class="hireUs button hvr-grow-shadow"><a href="#contactUs">WORK WITH US</a></div>
-				<div id="join" class="button hvr-radial-out"><a href="{{ action("TestimonialController@getAllTestimonials") }}#jobContainer">JOIN OUR TEAM</a></div>
+				<div class="hireUs button hvr-grow-shadow"><a href="/partner">HIRE US</a></div>
+				<div id="join" class="button hvr-radial-out"><a href="/careers">JOIN OUR TEAM</a></div>
 			</div>
 		</div>
 
