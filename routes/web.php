@@ -60,6 +60,8 @@ Route::get('/team', 'TestimonialController@getAllTestimonials');
 
 Route::get('/opportunities/{type}', 'JobController@getJobInfo');
 
+Route::get('/partner', 'PartnerController@index');
+
 Route::get('/careers', 'CareerController@index');
 Route::get('/contact', 'ContactController@index');
 

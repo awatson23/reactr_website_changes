@@ -1,5 +1,4 @@
-var mainComputer = document.querySelector("#heroImage"),
-	header = document.querySelector("header"),
+
 
 	//for who we are section
 	modal = document.querySelector("#learnMoreModal"),
@@ -68,8 +67,9 @@ window.onscroll = function() {
 //SCROLL ANIMATIONS
 var last_pos = 0;
 var ticking = false;
+var scroll_pos = window.scrollY;
 
-function doSomething(scroll_pos) {
+/*function doSomething(scroll_pos) {
 	console.log(scroll_pos);
 
 	var windowWidth = window.innerWidth;
@@ -81,13 +81,14 @@ function doSomething(scroll_pos) {
 		//make sure main her oimage is visible on mobile
 		// mainComputer.style.visibility = "visible";
 	}
-}
+}*/
 
-
+console.log(scroll_pos)
 
 //slide elements in from left/right as user scrolls to their section
 //if this needs to be edited- console.log(scroll_pos) to find new scroll position in console
 function slideOffers(scroll_pos){
+
 
 		if(scroll_pos < 792) {
 
@@ -138,9 +139,6 @@ function slideOffers(scroll_pos){
 
 
 
-		}if(scroll_pos > 3065 && scroll_pos < 3223){
-
-			countUp();
 		}
 
 		//if the "why hire reactr" section has been expanded- content underneath has new scroll positions
@@ -158,7 +156,11 @@ function slideOffers(scroll_pos){
 
 }
 
-
+function Counter(scroll_pos) {
+	if (scroll_pos > 1000 && scroll_pos < 6000) {
+		countUp();
+	}
+}
 
 
 //find scroll-window height
@@ -330,7 +332,7 @@ function countUpProj(){
 	var cont = { val:0 },
 		newVal = 34;
 
-	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){number.innerHTML=Math.floor(cont.val)}});
+	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){projNum.innerHTML=Math.floor(cont.val)}});
 }
 
 
@@ -339,7 +341,7 @@ function countUpSponsor(){
 	var cont = { val:0 },
 		newVal = 400;
 
-	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){sponsorNumber.innerHTML=Math.floor(cont.val) + "K"}});
+	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){sponsNum.innerHTML=Math.floor(cont.val) + "K"}});
 }
 
 function countUpJobs(){
@@ -347,7 +349,7 @@ function countUpJobs(){
 	var cont = { val:0 },
 		newVal = 72;
 
-	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){jobsNumber.innerHTML=Math.floor(cont.val)}});
+	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){jobNum.innerHTML=Math.floor(cont.val)}});
 }
 
 
@@ -356,12 +358,12 @@ function countUpAlumni(){
 	var cont = { val:0 },
 		newVal = 95;
 
-	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){alumNumber.innerHTML=Math.floor(cont.val) + "%"}});
+	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){alumNum.innerHTML=Math.floor(cont.val) + "%"}});
 }
 
 
 
-function countUp(){
+function countUp() {
 	countUpProj();
 	countUpSponsor();
 	countUpJobs();

@@ -276,7 +276,7 @@
 
 					<div id="hireLinks">
 
-						<div class="hireUs button hvr-grow-shadow"><a href="#contactUs">WORK WITH US</a></div>
+						<div class="hireUs button hvr-grow-shadow"><a href="/partner">WORK WITH US</a></div>
 						<a href="#" onclick="return false" class="smallTitle" id="moreLink">read more</a>
 
 					</div>
