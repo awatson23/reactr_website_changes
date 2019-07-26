@@ -322,6 +322,14 @@ footer{
   border-bottom: 2.5px solid #fff;
 }
 
+#mainNav ul li a.activePartner {
+  border-bottom: 2.5px solid #fff;
+}
+
+#mainNav ul li a.activeContact {
+  border-bottom: 2.5px solid #fff;
+}
+
 /*for desktop*/
 @media screen and (min-width: 960px){
  .hamburgerContainer{
@@ -3478,6 +3486,7 @@ section:nth-child(6n+7) .projectInfo a{
 #workingAtReactr .subTitle{
  color: #5549F9;
  margin-bottom: 40px;
+ margin-top: 30px;
 }
 
 #workingAtReactr .copy{
@@ -3495,13 +3504,13 @@ section:nth-child(6n+7) .projectInfo a{
 
 #reactrVideo iframe {
   width: 100%;
-  margin: 0vw auto;
+  margin: 0 auto;
 }
 
 #reactrVideo {
-  display: block;
-  width: 65%;
+  width: 55vw;
   margin: 0 auto;
+  height: 40vh;
 }
 
 @media screen and (min-width: 700px) {
@@ -3523,13 +3532,14 @@ section:nth-child(6n+7) .projectInfo a{
 
 #reactrVideo {
   width: 50%;
+  height: 50vh;
   display: block;
-  margin: 0 auto;
+  margin: 10vh auto;
 }
 
 #workingAtReactr .content {
-  width: 30%;
-  padding: 0px;
+  width: 35%;
+  margin: 5% auto;
 
 }
  
@@ -3572,7 +3582,7 @@ section:nth-child(6n+7) .projectInfo a{
  background: linear-gradient(70deg, #5549F9 60%, rgb(80, 68, 241) 60%);
  padding-top: 90px;
  margin-bottom: 150px;
- margin-top: 50px;
+ margin-top: 25px;
 }
 
 #ourTeam .content{
@@ -4294,7 +4304,7 @@ i{
 
 
 #jobHeader #mainNav{
- background-color: #5549F9;
+ background-color: #f24c72;
 }
 
 #jobDescMain{
@@ -4328,7 +4338,7 @@ i{
 #backJobs{
  grid-column: 1 / -1;
  place-self: start start;
- color: #5549F9;
+ color: #f24c72;
 }
 
 #jobForm{
@@ -4340,11 +4350,11 @@ i{
 }
 
 #jobForm #resumeContainer{
- border-color: #5549F9;
+ border-color: #f24c72;
 }
 
 #jobForm i{
- color: #5549F9;
+ color: #f24c72;
 }
 
 #youWill{
@@ -4425,16 +4435,16 @@ i{
 
 /*form*/
 #jobDescMain #applyHere .subTitle{
- color: #5549F9;
+ color: #f24c72;
  margin-bottom: 44px;
 }
 
 #jobDescMain #applyHere input{
- border-color: #5549F9;
+ border-color: #f24c72;
 }
 
 #jobDescMain #applyHere #submit{
- background-color: #5549F9;
+ background-color: #f24c72;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -4520,9 +4530,24 @@ i{
 
 /*-------------CONTACT PAGE-------------------*/
 /*contact us*/
+#googleMap {
+        border: 2px solid #5549F9;
+        width: 450px;
+        height: 350px;  
+}
+
+#googleMap iframe {
+      -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+         filter: grayscale(100%);
+}
+
 #contactUs{
  display: block;
  width: 100%;
+ padding-bottom: 25px;
 }
 
 #contactUs .content{
@@ -4531,28 +4556,28 @@ i{
  display: flex;
  flex-direction: column;
  align-items: center;
- padding: 0 30px;
+ padding: 40px 30px;
  position: relative;
 }
 
 #contactInfo{
  grid-column: 1 / -1;
- margin-top: 100px;
+ margin-top: 150px;
  margin-bottom: 82px;
  place-self: center;
 }
 
 .infoBlock{
- margin-bottom: 53px;
+ margin-bottom: 35px;
 }
 
 .infoBlock .copy{
- line-height: 30px;
+ line-height: 25px;
 }
 
 #contactInfo .subTitle{
  color: #5549F9;
- margin-bottom: 47px;
+ margin-bottom: 30px;
  text-align: center;
 }
 
@@ -4568,7 +4593,7 @@ i{
  #contactForm{
    max-width: 614px;
    width: 100%;
-   height: 759px;
+   height: 850px;
    background-color: #fff;
    display: block;
  }
@@ -4583,7 +4608,7 @@ i{
  #contactForm .subTitle{
    color: #5549F9;
    margin-bottom: 35px;
-   margin-top: 60px;
+   margin-top: 10px;
  }
 
  #submit{
@@ -4617,10 +4642,11 @@ i{
  }
 
  #contactInfo{
-   margin-top: 200px;
-   margin-bottom: 82px;
-   margin-left: 0;
+   margin-top: 150px;
+   margin-bottom: 40px;
+   margin-left: 0px;
    width: 210px;
+
  }
 
  #contactInfo .subTitle{
@@ -4629,11 +4655,11 @@ i{
 
  #contactForm{
   min-width: 500px;
-  margin-top: 140px;
+  margin-top: 170px;
   border: 2px solid #5549F9;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   position: absolute;
-  bottom: -200px;
+  bottom: 20px;
  }
 
  #contactForm form{
@@ -4685,7 +4711,8 @@ i{
 
   #contactForm{
     grid-column: 8 / -1;
-    bottom: -150px;
+    bottom: 20px;
+    top: 20px;
   }
 
   #contactInfo{

@@ -11,7 +11,7 @@
 			<h2 class="hide">{{$title}} Description</h2>
 
 			<div class="content">
-				<a href="{{ action("TestimonialController@getAllTestimonials") }}#teamWords" class="smallTitle" id="backJobs">&lt; back to jobs</a>
+				<a href="/careers" class="smallTitle" id="backJobs">&lt; back to jobs</a>
 				<p class="title">{{$title}}</p>
 
 				<div id="mission">

@@ -10,8 +10,8 @@ class JobController extends Controller
   //JOB DESCRIPTION PAGE
   public function getJobInfo($type)
   {
-    $headerStyle = 'background-color: #5549F9;'; //colour of header for the view
-
+    $headerStyle = 'background-color: #f24c72;'; //colour of header for the view
+    $footerStyle = 'background-color: #f24c72;';
     //hardcoded array for each job
     if ($type=='workstudy') { //if this is the job type selected this is the data that will be passed to the view
       $title = 'Work Study';
@@ -31,7 +31,7 @@ class JobController extends Controller
       $listItems = ['Write Object-Oriented PHP', 'Work with popular PHP MVC frameworks', 'Work with public APIs'];
     }
 
-    return view('pages.job')->with('headerStyle', $headerStyle)->with('title', $title)->with('opportunity', $opportunity)->with('listItems', $listItems);
+    return view('pages.job')->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle)->with('title', $title)->with('opportunity', $opportunity)->with('listItems', $listItems);
   }
 
 }

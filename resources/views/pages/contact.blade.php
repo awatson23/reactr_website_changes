@@ -18,6 +18,13 @@
 				</div>
 
 				<div class="infoBlock">
+					<p class="smallTitle">EMAIL</p>
+					<p class="copy">jobs@reactr.ca</p>
+					<p class="copy">hire@reactr.ca</p>
+					<p class="copy"><span>info@reactr.ca</span></p>
+				</div>
+
+				<div class="infoBlock">
 					<p class="smallTitle">ADDRESS</p>
 					<p class="copy">Fanshawe College London Downtown Campus</p>
 					<p>Howard W. Rundle Building,</p>
@@ -27,10 +34,10 @@
 				</div>
 
 				<div class="infoBlock">
-					<p class="smallTitle">EMAIL</p>
-					<p class="copy">jobs@reactr.ca</p>
-					<p class="copy">hire@reactr.ca</p>
-					<p class="copy"><span>info@reactr.ca</span></p>
+					<div id="googleMap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.766876438489!2d-81.25282428452385!3d42.983184179149994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef21d720bc4f9%3A0x8fdbf0b8a8ed6340!2s137+Dundas+St%2C+London%2C+ON+N6A+1E9!5e0!3m2!1sen!2sca!4v1564163218555!5m2!1sen!2sca" 
+						width="100%" height="100%" frameborder="0" style="border:1" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 
