@@ -20,7 +20,7 @@
 			<li><a href="/archive" @if (isset($activeProjects))class="{{$activeProjects}}" @endif>Projects</a></li>
 			<li><a href="/careers" @if (isset($activeCareers))class="{{$activeCareers}}" @endif>Careers</a></li>
             <li><a href="{{ action("ProjectsController@home") }}#contactUs">Contact</a></li>
-            <li><a href="{{ action("ProjectsController@home") }}#contactUs">Partner</a></li>
+            <li><a href="{{ action("ProjectsController@home") }}#offer">Partner</a></li>
 					</ul>
 				</nav>
 

@@ -37,7 +37,8 @@
 				</div>
 
 			<div id="reactrVideo">
-				<iframe src="https://player.vimeo.com/video/213679775" width="100%" height="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+				<!--<iframe src="https://player.vimeo.com/video/213679775" width="100%" height="100%" frameborder="0" allow="fullscreen" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>-->
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/oB-NnVpvQ78?controls=0&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 
@@ -101,16 +102,6 @@
 
 					</div>
 
-					<div class="member" id="member5">
-						<img src="/images/natalia.png" alt="Tina VanderVecht" class="memberPhoto">
-						<p class="smallTitle">Tina VanderVecht</p>
-						<p>Assistant Level 3</p>
-						<ul>
-							<li><a href="https://www.linkedin.com/in/tinavv/"><img src="/images/linkedIn.svg" alt="linkedin" class="teamIcon" width="21"></a></li>
-							<li><a href="mailto:tvandervecht@gmail.com"><img src="/images/at.svg" alt="@ something" class="teamIcon" width="21"></a></li>
-						</ul>
-
-					</div>
 				</div>
 
 

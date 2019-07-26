@@ -12,8 +12,9 @@ class TestimonialController extends Controller
       //grabs all team/student testimonies
       $testimonials = Testimonials::All();
       $headerStyle = 'background-color: #b2da69;';//header colour for view
+      $footerStyle = 'background-color: #b2da69;';
       $activeAbout = 'activeAbout';
-      return view('pages.team')->with('testimonials', $testimonials)->with('headerStyle', $headerStyle)->with('activeAbout', $activeAbout);
+      return view('pages.team')->with('testimonials', $testimonials)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle)->with('activeAbout', $activeAbout);
     }
 
 }

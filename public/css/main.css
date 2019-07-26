@@ -3782,13 +3782,11 @@ section:nth-child(6n+7) .projectInfo a{
 }
 
 #reactrVideo iframe {
-  width: 100%;
   margin: 0vw auto;
-}
-
-#reactrVideo {
   display: block;
 }
+
+
 
 @media screen and (min-width: 700px) {
   #workingAtReactr .content {
@@ -3867,6 +3865,7 @@ section:nth-child(6n+7) .projectInfo a{
  max-width: 1366px;
  margin: auto;
  padding-top: 80px;
+ 
 }
 
 .teamTitle{
@@ -3925,8 +3924,8 @@ section:nth-child(6n+7) .projectInfo a{
  }
 
  #ourTeam .member{
-   margin-right: 30px;
-   margin-left: 30px;
+   margin-right: 50px;
+   margin-left: 50px;
    margin-bottom: 80px;
  }
 
@@ -3983,15 +3982,6 @@ section:nth-child(6n+7) .projectInfo a{
    text-align: center;
  }
 
-
-
- @supports (display: grid){
-
-   #ourTeam{
-     margin-bottom: -200px;
-   }
-
- }
 }
 
 
@@ -4009,7 +3999,7 @@ section:nth-child(6n+7) .projectInfo a{
  max-width: 100%;
  padding: 70px 25px 40px 25px;
  display: grid;
- margin-bottom: 30%;
+margin-bottom: 20%;
 }
 
 .wordsContainer{
@@ -4352,7 +4342,6 @@ padding-top: 100px;
 
 
 
-
 @media screen and (min-width: 1220px){
 
  @supports (display: grid){
@@ -4369,12 +4358,6 @@ padding-top: 100px;
  }
 
 }
-
-
-
-
-
-
 
 
 
@@ -4520,9 +4503,6 @@ i{
  }
 
 
-
-
-
  @supports (display: grid){
 
    #applyContainer{
@@ -4567,13 +4547,6 @@ i{
 }
 
 
-
-
-
-
-
-
-
 /*footer*/
 #teamFooter{
  background-color: #5549F9;
@@ -4588,37 +4561,12 @@ i{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----------JOB DESCRIPTION PAGE----------*/
 
 #jobHeader{
  background-color: #5549F9;
  margin-top: -100px;
 }
-
 
 
 @supports (display: grid){
@@ -4683,24 +4631,22 @@ i{
  color: #5549F9;
 }
 
-#youWill{
+#youWill {
  margin-bottom: 50px;
 }
 
-#youWill ul, #youAre ul{
+#youWill ul, #youAre ul {
  padding: 0 20px;
 }
 
-#youWill ul li, #youAre ul li{
+#youWill ul li, #youAre ul li {
  font-size: 16px;
  font-weight: 700;
  margin-bottom: 20px;
 }
 
 
-
-
-@media screen and (min-width: 960px){
+@media screen and (min-width: 960px) {
 
  #jobDescMain .content{
    padding: 0 150px;
@@ -4719,7 +4665,6 @@ i{
  #applyHere{
    clear: both;
  }
-
 
 
  @supports (display: grid){
@@ -4752,13 +4697,6 @@ i{
 }
 
 
-
-
-
-
-
-
-
 /*form*/
 #jobDescMain #applyHere .subTitle{
  color: #5549F9;
@@ -4777,8 +4715,6 @@ i{
 }
 
 
-
-
 @media screen and (min-width: 960px){
 
  #jobDescMain #applyHere{
@@ -4791,8 +4727,6 @@ i{
    text-align: center;
  }
 }
-
-
 
 
 @media screen and (min-width: 1024px){
@@ -4832,9 +4766,6 @@ i{
 
 
 }
-
-
-
 
 @media screen and (min-width: 1220px){
 

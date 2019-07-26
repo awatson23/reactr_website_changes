@@ -33,18 +33,20 @@
 				
 
 		</section>
-			  
+			
+		
+		<section id="jobsApply">
 				<section id="jobs">
 			<h2 class="hide">Available Jobs at Reactr</h2>
 			<div id="jobContainer" class="content">
 
-				<div id="jobsImage">
+				<!--<div id="jobsImage">
 					<img src="/images/multi_phone.png" alt="mobile mockups">
 				</div>
 
 				<div id="jobsImageLG">
 					<img src="/images/multi_phoneLG.png" alt="desktop mockups">
-				</div>
+				</div>-->
 
 				<p class="subTitle">available jobs at reactr</p>
 				<p class="copy jobCopy">Lorem ipsum dolor sit amet, consecteur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
@@ -80,6 +82,7 @@
 			</div>
 		</section>
 
+		
 		<div id="applyContainer">
 					<section id="applyHere">
 
@@ -125,8 +128,10 @@
 
 					</section>
 				</div>
+			</section>
 
 @endsection
+
 
 @section('pagescript')
 <script src="/js/ie.js"></script>
