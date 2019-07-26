@@ -3688,7 +3688,7 @@ section:nth-child(6n+7) .projectInfo a{
 
  #teamWords{
    grid-column: 3 / -3;
-   border: 2px solid #01bec0;
+   border: 2px solid #f24c72;
    padding: 80px 50px;
    text-align: center;
    z-index: 2;
@@ -4251,7 +4251,7 @@ i{
 }
 
 #teamWords .subTitle, .teamName{
- color: #01bec0;
+ color: #f24c72;
  margin-bottom: 30px;
 }
 
@@ -4276,11 +4276,11 @@ i{
 }
 
 #teamBullets .dot:hover{
- background-color: #01bec0;
+ background-color: #f24c72;
 }
 
 #teamBullets .active{
- background-color: #01bec0;
+ background-color: #f24c72;
 }
 
 
