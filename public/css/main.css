@@ -4654,7 +4654,7 @@ i{
  }
 
  #contactForm{
-  min-width: 500px;
+  min-width: 50%;
   margin-top: 170px;
   border: 2px solid #5549F9;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
