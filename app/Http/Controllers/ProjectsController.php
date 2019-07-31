@@ -27,8 +27,8 @@ class ProjectsController extends Controller
       $projects =  Projects::with('awards')->orderBy('project_year', 'desc')->get();
 
       //$projects = Projects::all()->awards->sortByDesc("project_date");
-      $headerStyle = 'background-color: #01bec0 !important;';
-      $footerStyle = 'background-color: #01bec0 !important;';
+      $headerStyle = 'background-color: #f85177 !important;';
+      $footerStyle = 'background-color: #f85177 !important;';
       $activeProjects = 'activeProjects';
       return view('pages.archive')->with('projects', $projects)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle)->with('activeProjects', $activeProjects);
       //return $projects;
