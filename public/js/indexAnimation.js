@@ -102,13 +102,13 @@ function slideOffers(scroll_pos){
 
 
 
-		}if(scroll_pos > 1450 && scroll_pos < 2888) {
+		} if(scroll_pos > 2200 && scroll_pos < 3000) {
 
 
 			offers.forEach(offer => offer.style.visibility = "visible");
 			offers.forEach(offer => offer.classList.add('slide'));
 
-		}else if(scroll_pos > 2938 || scroll_pos < 1450) {
+		}else if(scroll_pos > 3000 || scroll_pos < 2200) {
 
 			offers.forEach(offer => offer.style.visibility="hidden");
 			offers.forEach(offer => offer.classList.remove('slide'));
@@ -161,6 +161,8 @@ function Counter(scroll_pos) {
 		countUp();
 	}
 }
+
+
 
 
 //find scroll-window height
