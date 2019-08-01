@@ -29,7 +29,7 @@
 		</section>
 
 
-        <section id="offer">
+    <section id="offer">
 	<h2 class="hide">What We Offer</h2>
 
 
@@ -183,7 +183,61 @@
 	</div>
 </section>
 
+<section id="serviceScales">
+     <div id="scaleTitle">
+        <p class="subTitle">PROJECT DETAILS</p>
+		<p class="copy"></p>
+     </div>   
 
+     <div class="scaleSection" id="smallScale">
+         <p class="smallTitle" id="scaleType">Small-scale</p>
+        <div class="scaleProjects">
+            <p class="smallTitle">Example projects:</p>
+        </div>
+        <div class="scaleIncludes">
+            <p class="smallTitle">Services included:</p>
+        </div>
+        <div class="scaleLength">
+            <p class="smallTitle">Length:</p>
+        </div>
+        <div class="scaleTimeline">
+            <p class="smallTitle">Timeline:</p>
+        </div>
+     </div>
+
+     <div class="scaleSection" id="largeScale">
+     <p class="smallTitle" id="scaleType">Large-scale</p>
+     <div class="scaleProjects">
+            <p class="smallTitle">Example projects:</p>
+        </div>
+        <div class="scaleIncludes">
+            <p class="smallTitle">Services included:</p>
+        </div>
+        <div class="scaleLength">
+            <p class="smallTitle">Length:</p>
+        </div>
+        <div class="scaleTimeline">
+            <p class="smallTitle">Timeline:</p>
+        </div>
+     </div>
+
+     <div class="scaleSection" id="consultScale">
+     <p class="smallTitle" id="scaleType">Media consultation</p>
+        <div class="scaleProjects">
+            <p class="smallTitle">Example projects:</p>
+        </div>
+        <div class="scaleIncludes">
+            <p class="smallTitle">Services included:</p>
+        </div>
+        <div class="scaleLength">
+            <p class="smallTitle">Length:</p>
+        </div>
+        <div class="scaleTimeline">
+            <p class="smallTitle">Timeline:</p>
+        </div>
+     </div>
+
+</section>
 		
 
 
