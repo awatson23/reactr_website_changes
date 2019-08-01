@@ -951,9 +951,6 @@ footer .content{
     }
 */
 
-/*partner/services section*/
-
-
 }
 
 
@@ -1426,11 +1423,6 @@ footer .content{
     display: block;
   }
 
-  #whyHire{
-    /*height: 2000px;*/
-    /*height: 2500px;*/
-  }
-  
  .mainHire{
    max-height: none;
  }
@@ -2050,7 +2042,7 @@ section:nth-child(6n+7) .view{
 
 section:nth-child(6n+7) .projectInfo a{
  /*color: #f85177;*/
- color: ##f85177;
+ color: #f85177;
 }
 
 
@@ -4460,7 +4452,6 @@ i{
 
 #partner{
  max-width: 100%;
-
 background: -webkit-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
 background: -o-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
 background: linear-gradient(to bottom right, #b2da69 30%, #a5cd5c 30%);
@@ -4497,7 +4488,24 @@ padding-top: 100px;
  padding: 10px 0;
 }
 
+#serviceScales {
+  margin-top: 10vh;
+}
 
+#scaleType {
+  color: #9fca4f;
+  text-align: center;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+.scaleSection {
+  display: flex;
+  flex-direction: column;
+  widtH: 70vw;
+  height: 30vh;
+  margin: 0 auto;
+}
 
 
 @media screen and (min-width: 720px){
