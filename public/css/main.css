@@ -591,7 +591,7 @@ footer .content{
 
 
 
-/*header color onScroll*/
+/*Homepage header color onScroll*/
 .headerChange { background-color: #01bec0 !important;}
 
 /*hero section*/
@@ -611,7 +611,6 @@ footer .content{
    left: 0;
    width: 100%;
    height: 100%;
- /*  z-index: -1;*/
    pointer-events: none;
    overflow: hidden;
 }
@@ -682,7 +681,6 @@ footer .content{
     height: 70vh;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     margin : auto 0;
     margin-left: 30px;
  
@@ -703,7 +701,6 @@ footer .content{
     height: 200px;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
 
   }
   
@@ -728,7 +725,6 @@ footer .content{
     margin-left: 50px;
     display: flex;
     flex-direction: column;
-   /* justify-content: space-around;*/
   }
 
   #heroBlurb {
@@ -743,11 +739,12 @@ footer .content{
   }
 
   #heroLinks{
-   width: 70%;
+   width: 450px;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
+   justify-content: space-between;   
   }
+
 
   #heroLinks .button{
    width: 200px;
@@ -772,30 +769,30 @@ footer .content{
 @media screen and (min-width: 1280px){
 
   #heroText{
-    width: 50%;
+    width: 450px;
     height: 60vh;
     top:40vh;
     margin-left: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
   }
 
   #heroBlurb {
-    width: 70%;
-    height: 30vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  }
+
+   #heroBlurb .copy{
+    margin-top: 20px;
+    margin-bottom: 55px;
   }
 
   #heroLinks{
-   width: 70%;
-   height: 20vh;
+   width: 450px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   margin-top: 40px;
   }
 
   #heroLinks .button{
@@ -836,6 +833,7 @@ footer .content{
 }
 
 /*styling for the pop up*/
+
 #learnMoreModal{
     max-width: 500px;
     margin: auto;
@@ -945,11 +943,6 @@ footer .content{
         text-align: left;
         line-height: 30px;
     }
-/*
-    #learnMoreModal ul li:last-child{
-        margin-bottom: 0;
-    }
-*/
 
 }
 
@@ -1259,7 +1252,6 @@ footer .content{
   .offer {
     
     flex: 1 100%;
-   /* padding: 3% 10%;*/
 
   }
 
@@ -1422,6 +1414,7 @@ footer .content{
   .hiddenContent{
     display: block;
   }
+
 
  .mainHire{
    max-height: none;
@@ -1599,10 +1592,6 @@ footer .content{
 
 
 
-
-
-
-
 /*the numbers don't lie*/
 #numbers{
  padding: 80px 25px;
@@ -1701,14 +1690,6 @@ footer .content{
 
 
 
-
-
-
-
-
-
-
-
 /*testimonials*/
 
 
@@ -1722,13 +1703,11 @@ footer .content{
   width: auto;
 }
 
-
-
 #testimonialContainer{
   grid-column: 1 / -1;
   justify-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-temlpate-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   width: auto;
   text-align: center;
@@ -1746,12 +1725,11 @@ footer .content{
   height: max-content;
 }
 
-#testimonials .subTitle{
-  /*grid-column: 1 / 3;
-  grid-row: 1 / 2;*/
-  text-align: center;
-  color: #01bec0 !important;
-  /*margin-bottom: 35px;*/
+#testimonialContainer .subTitle{
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  color: #5549F9;
+  margin-bottom: 35px;
 }
 
 
@@ -4651,7 +4629,7 @@ width: 27%;
 #contactUs{
  display: block;
  width: 100%;
- padding-bottom: 25px;
+/* padding-bottom: 25px;*/
 }
 
 #contactUs .content{
@@ -4660,12 +4638,12 @@ width: 27%;
  display: flex;
  flex-direction: column;
  align-items: center;
- padding: 40px 30px;
+ padding: 0 30px;
  position: relative;
 }
 
 #contactInfo{
- grid-column: 1 / -1;
+/* grid-column: 1 / -1;*/
  margin-top: 150px;
  margin-bottom: 82px;
  place-self: center;
@@ -4733,7 +4711,29 @@ width: 27%;
 
 
 
+@media screen and (max-width: 475px){
 
+
+  #contactUs .content{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contactInfo{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+  }
+
+  #googleMap{
+    width: 100%;
+  }
+
+}
 
 @media screen and (min-width: 960px){
 
