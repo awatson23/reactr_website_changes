@@ -325,7 +325,7 @@ function readMore(){
 $(document).ready(function(){
 
 
-var countMagic = new ScrollMagic.Controller();
+
 
 //functions for stats- GSAP
 function countUpProj(){
@@ -373,15 +373,7 @@ function countUp() {
 
 
 
-var countDownScene = new ScrollMagic.Scene({
-	triggerElement: '#numbers',
-	triggerHook: .8,
-	reverse:false
-   })
-   .setTween(countUp)
-   .addTo(countMagic);
 
-});
 
 
 
@@ -627,5 +619,4 @@ lessButton.addEventListener('click', readMore);
 
 dots.forEach(dot => dot.addEventListener('click', showSlides));
 
-
-
+});

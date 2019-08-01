@@ -189,16 +189,29 @@
 		<p class="copy"></p>
      </div>   
 
-     <div class="scaleSection" id="smallScale">
-         <p class="smallTitle" id="scaleType">Small-scale</p>
-        <div class="scaleProjects">
-            <p class="smallTitle">Example projects:</p>
-        </div>
-        <div class="scaleIncludes">
-            <p class="smallTitle">Services included:</p>
-        </div>
-        <div class="scaleLength">
-            <p class="smallTitle">Length:</p>
+     
+        <div class="scaleSection" id="smallScale">
+            <p class="smallTitle" id="scaleType">Small-scale</p>
+        <div class="scaleRowDiv">
+    
+            <div class="scaleIncludes">
+                <p class="smallTitle">Service:</p>
+                <p class="copy">
+                    Includes the design and development of an informational website</p>
+            </div>
+            <div class="scaleProjects">
+                <p class="smallTitle">Included:</p>
+                <p class="copy">
+                    <ul>
+                        <li>Website with 1 contact form and 1 database</li>
+                        <li>Creation of digital media content</li>
+                        <li>Social media prescence and branging</li>
+                    </ul></p>
+            </div>
+            <div class="scaleLength">
+                <p class="smallTitle">Length:</p>
+                <p class="copy">12 weeks starting in September or January</p>
+            </div>
         </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
@@ -206,32 +219,53 @@
      </div>
 
      <div class="scaleSection" id="largeScale">
-     <p class="smallTitle" id="scaleType">Large-scale</p>
-     <div class="scaleProjects">
-            <p class="smallTitle">Example projects:</p>
-        </div>
+         <p class="smallTitle" id="scaleType">Large-scale</p>
+     <div class="scaleRowDiv">
         <div class="scaleIncludes">
-            <p class="smallTitle">Services included:</p>
+            <p class="smallTitle">Service:</p>
+            <p class="copy">
+                    A project requiring design, web development, and database architecture</p>
+        </div>
+        <div class="scaleProjects">
+            <p class="smallTitle">Included:</p>
+            <p class="copy">
+                    <ul>
+                        <li>Web portals/tools</li>
+                        <li>Custom frameworks</li>
+                        <li>Toolkits</li>
+                    </ul></p>
         </div>
         <div class="scaleLength">
             <p class="smallTitle">Length:</p>
+            <p class="copy">24 weeks, divided into 2 - 12 weeks blocks</p>
         </div>
+    </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
         </div>
      </div>
 
      <div class="scaleSection" id="consultScale">
-     <p class="smallTitle" id="scaleType">Media consultation</p>
-        <div class="scaleProjects">
-            <p class="smallTitle">Example projects:</p>
-        </div>
+        <p class="smallTitle" id="scaleType">Media consultation</p>
+     <div class="scaleRowDiv">
         <div class="scaleIncludes">
-            <p class="smallTitle">Services included:</p>
+            <p class="smallTitle">Service:</p>
+            <p class="copy"> Offered to start-ups and medium-sized companies, with a digital media/technology project that is still in the ideation / planning stages.</p>
+        </div>
+        <div class="scaleProjects">
+            <p class="smallTitle">Included:</p>
+            <p class="copy">
+                    <ul>
+                        <li>Assessment reports</li>
+                        <li>Recommendations</li>
+                        <li>Could potentially lead to a small or large scale project with Reactr</li>
+                    </ul></p>
         </div>
         <div class="scaleLength">
             <p class="smallTitle">Length:</p>
+            <p class="copy"> 2-3 meetings (can be remote)</p>
         </div>
+     </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
         </div>

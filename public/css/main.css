@@ -4488,6 +4488,11 @@ padding-top: 100px;
  padding: 10px 0;
 }
 
+#scaleSection {
+  margin-top: 10vh;
+  padding: 3vw;
+}
+
 #serviceScales {
   margin-top: 10vh;
 }
@@ -4502,9 +4507,50 @@ padding-top: 100px;
 .scaleSection {
   display: flex;
   flex-direction: column;
-  widtH: 70vw;
-  height: 30vh;
+  width: 100vw;
+  margin: 5vh auto;
+}
+
+#scaleType {
+  font-weight: 1vw;
+  padding: 1.5vw;
+}
+
+.scaleRowDiv {
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+width: 70%;
+}
+
+.scaleTimeline {
   margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.scaleProjects {
+  flex-direction: row;
+  text-align: left;
+  width: 27%;
+}
+
+.scaleIncludes {
+flex-direction: row;
+text-align: left;
+width: 27%;
+}
+
+.scaleLength {
+  flex-direction: row;
+  text-align: left;
+  width: 27%;
+}
+
+.scaleTimeline {
+  /*border-bottom: 2px solid #9fca4f;*/
+  width: 70%;
+  text-align: center;
 }
 
 
