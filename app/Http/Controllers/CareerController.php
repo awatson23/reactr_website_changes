@@ -11,8 +11,8 @@ class CareerController extends Controller
     {
         $testimonials = Testimonials::All();
         $activeCareers ='activeCareers';
-        $headerStyle = 'background-color: #ffd23e';
-        $footerStyle = 'background-color: #ffd23e';
+        $headerStyle = 'background-color: #ffbb07 ';
+        $footerStyle = 'background-color: #ffbb07 ';
         return view('pages.careers')->with('testimonials', $testimonials)->with('activeCareers', $activeCareers)->with('headerStyle', $headerStyle)->with('footerStyle', $footerStyle);
     }
 }

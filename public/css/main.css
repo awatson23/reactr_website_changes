@@ -1974,23 +1974,23 @@ colour variations in case random loop of colours are preferred again*/
 
 section:nth-child(6n+2) .view{
  /*background-color: #eb8e30;*/
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 section:nth-child(6n+2) .projectInfo a{
  /*color: #eb8e30;*/
- color: #01bec0;
+ color: #f85177;
 }
 
 
 
 section:nth-child(6n+3) .projectInfo a{
- color: #01bec0;
+ color: #f85177;
 }
 
 
 section:nth-child(6n+3) .view{
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 
@@ -1998,12 +1998,12 @@ section:nth-child(6n+3) .view{
 
 section:nth-child(6n+4) .projectInfo a{
  /*color: #ffd23e;*/
- color: #01bec0;
+ color: #f85177;
 }
 
 section:nth-child(6n+4) .view{
  /*background-color: #ffd23e;*/
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 
@@ -2012,12 +2012,12 @@ section:nth-child(6n+4) .view{
 
 section:nth-child(6n+5) .projectInfo a{
  /*color: #ba2d99;*/
- color: #01bec0;
+ color: #f85177;
 }
 
 section:nth-child(6n+5) .view{
  /*background-color: #ba2d99;*/
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 
@@ -2027,12 +2027,12 @@ section:nth-child(6n+5) .view{
 
 section:nth-child(6n+6) .projectInfo a{
  /*color: #b2da69;*/
- color: #01bec0;
+ color: #f85177;
 }
 
 section:nth-child(6n+6) .view{
  /*background-color: #b2da69;*/
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 
@@ -2041,12 +2041,12 @@ section:nth-child(6n+6) .view{
 
 section:nth-child(6n+7) .view{
  /*background-color: #f85177;*/
- background-color: #01bec0;
+ background-color: #f85177;
 }
 
 section:nth-child(6n+7) .projectInfo a{
  /*color: #f85177;*/
- color: #01bec0;
+ color: ##f85177;
 }
 
 
@@ -2056,7 +2056,7 @@ section:nth-child(6n+7) .projectInfo a{
 /*footer*/
 #archiveFooter{
  /*background-color: #393939;*/
- background-color: #01bec0;
+ background-color: #f85177;
  padding: 50px 0;
 }
 
@@ -3120,7 +3120,7 @@ section:nth-child(6n+7) .projectInfo a{
 }
 
 
-/*----------TEAM PAGE---------*/
+/*----------------------ABOUT PAGE----------------------*/
 
 #teamHeader{
  background-color: #eb8e30;
@@ -3489,10 +3489,8 @@ display: block;
 /*our team*/
 #ourTeam{
  max-width: 100%;
- /*background: linear-gradient(to bottom right, #eb8e30 30%, #E98119 30%);*/
- background-color: #E9E9E9;
+ background: linear-gradient(to bottom right, #01bec0 10%, #01bec0 30%);
  padding-top: 90px;
-/* margin-bottom: 150px;*/
  margin-top: 25px;
 }
 
@@ -3508,12 +3506,12 @@ display: block;
 }
 
 .teamTitle .title{
- /*color: #fff;*/
+ color: #fff;
  margin-bottom: 50px;
 }
 
 .teamTitle .subTitle{
- /*color: #fff;*/
+ color: #fff;
  margin-bottom: 25px;
 }
 
@@ -3526,7 +3524,7 @@ display: block;
 }
 
 #teamPhotos .smallTitle, #teamPhotos p{
-/* color: #fff;*/
+ color: #fff;
  margin-bottom: 20px;
 }
 
@@ -3586,9 +3584,7 @@ display: block;
 
 @media screen and (min-width: 1024px){
 
- #ourTeam{
-/* background: linear-gradient(to bottom right, #eb8e30 30%, #E98119 30%);*/
- }
+ 
 
  #teamPhotos{
    grid-column: 1 / -1;
@@ -3623,13 +3619,13 @@ display: block;
 
 
 
-/*----------CAREERS PAGE--------------*/
+/*-----------------------CAREERS PAGE---------------------------------------*/
 
 /*looking for people who*/
 #people{
  max-width: 100%;
-/* background: linear-gradient(30deg, #ffd23e 80%, #FFCC25 80%);*/
- background: linear-gradient(to bottom right, #ffd23e 30%, #FFCC25 30%);
+
+ background: linear-gradient(to bottom right, #ffbb07  30%,  #ffb300 30%);
 }
 
 #people .content{
@@ -3667,8 +3663,9 @@ padding-top: 100px;
 @media screen and (min-width: 720px){
 
  #people{
-   /*background: linear-gradient(10deg, #f24c72 80%, #f85177 80%);*/
-    background: linear-gradient(to bottom right, #ffd23e 30%, #FFCC25 30%);
+   
+    /*background: linear-gradient(to bottom right,#ffbb07 30%,  #ffb300 30%);*/
+    background: linear-gradient(to bottom right,#fdbc00 30%,  #f2b400 30%);
  }
 }
 
@@ -3767,8 +3764,7 @@ padding-top: 100px;
 }
 
 #jobs .subTitle{
- /*color: #f24c72;*/
- color: #ffd23e;
+ color: #ffb300;
  margin-bottom: 25px;
 }
 
@@ -3783,8 +3779,7 @@ padding-top: 100px;
 }
 
 .job span{
- /*color: #f24c72;*/
- color: #ffd23e;
+ color:#ffb300;
  margin-left: -40px;
  margin-right: 20px;
 }
@@ -4125,7 +4120,7 @@ i{
 
 #aliminiWords{
   background-color: #fff;
-  border: 2px solid #ffd23e;
+  border: 2px solid #ffb300;
   max-width: 100%;
   /*padding:10% 10%;*/
   display: flex;
@@ -4146,7 +4141,7 @@ i{
 }
 
 #aliminiWords .subTitle, .teamName{
- color: #ffd23e;
+ color: #ffb300;
  margin-bottom: 30px;
 }
 
@@ -4171,11 +4166,11 @@ i{
 }
 
 #teamBullets .dot:hover{
- background-color: #ffd23e;
+ background-color: #ffb300;
 }
 
 #teamBullets .active{
- background-color: #ffd23e;
+ background-color: #ffb300;
 }
 
 @media screen and (max-width: 600px){
@@ -4185,7 +4180,6 @@ i{
  
     padding:2% 2%;
   
-  /*margin: 5% 20% 10% 20%;*/
 }
   
 }
@@ -4457,6 +4451,126 @@ i{
  background-color: #5549F9;
  padding-top: 50px;
 }
+
+/*-------------PARTNER PAGE-------------------*/
+
+#partner{
+ max-width: 100%;
+
+background: -webkit-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
+background: -o-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
+background: linear-gradient(to bottom right, #b2da69 30%, #a5cd5c 30%);
+}
+
+#partner .content{
+padding-top: 100px;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-bottom: 25px;
+ max-width: 1366px;
+ margin: auto;
+}
+
+#partner .title{
+ color: #fff;
+ margin-bottom: 65px;
+}
+
+#partner .subTitle{
+ color: #fff;
+ margin-bottom: 30px;
+}
+
+#partner ul{
+ padding: 0 25px;
+}
+
+#partner ul li{
+ color: #fff;
+ line-height: 35px;
+ font-weight: 500;
+ font-size: 18px;
+ padding: 10px 0;
+}
+
+
+
+
+@media screen and (min-width: 720px){
+
+ #partner{
+   
+    background: linear-gradient(to bottom right, #b2da69 30%,  #a5cd5c 30%);
+ }
+}
+
+
+
+
+@media screen and (min-width: 960px){
+
+ #partner .content{
+  padding: 50px 120px;
+   margin-top: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ #partnerMain{
+   margin-top: 60px;
+   width: 420px;
+ }
+
+ #partnerList{
+   padding-bottom: 50px;
+   margin-top: 60px;
+   width: 370px;
+ }
+
+
+ @supports (display: grid){
+
+   #partner .content{
+     display: grid;
+     grid-template-columns: 47px repeat(12, 1fr) 47px;
+     grid-column-gap: 16px;
+     padding: 75px  35px;
+   }
+
+   #partnerMain{
+     grid-column: 1 / 8;
+     width: auto;
+   }
+
+   #partnerList{
+     grid-column: 9 / -1;
+     width: auto;
+    padding-bottom: 100px;
+   }
+
+ }
+
+}
+
+
+@media screen and (min-width: 1220px){
+
+ @supports (display: grid){
+
+   #partnerMain{
+     grid-column: 3 / 8;
+     width: 90%;
+   }
+
+   #partnerList{
+     grid-column: 9 / 13;
+   }
+
+ }
+
+}
+
 
 
 

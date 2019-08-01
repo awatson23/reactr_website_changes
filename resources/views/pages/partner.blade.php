@@ -5,26 +5,21 @@
 @section('page', 'Careers')
 
 @section('content')
-<section id="people">
-			<h2 class="hide">People We Are Looking For</h2>
+<section id="partner">
+			<h2 class="hide">What we look for in company partners</h2>
 			<div class="content">
 
-				<div id="peopleMain">
-					<p class="title">Start your career path while you're still in school and get ahead.</p>
+				<div id="partnerMain">
+					<p class="title">Partner with Reactr on digital Media Projects</p>
 				</div>
 
-				<div id="peopleList">
-					<p class="subTitle">we are looking for people who are:</p>
+				<div id="partnerList">
+					<p class="subTitle">What we look for in company partners:</p>
 
 					<ul>
-						<li>Experienced in HTML / CSS / Javascript</li>
-						<li>Bothered by bugs (the coding kind)</li>
-						<li>Experienced in design software &amp; tools</li>
-						<li>Creative and passionate</li>
-						<li>A fan of application performance</li>
-						<li>Organized and detail oriented</li>
-						<li>Team players</li>
-						<li>Problem solvers</li>
+						<li> <strong>Start-ups to medium-sized companies</strong>, looking to establish their media presence, or to solve technical/digital issues through applied research in developing a digital media tool. </li>
+						<li>Companies looking for <strong>digital media consultation and conceptualization </strong> of a specialized digital media project.</li>
+						<li> <strong>Non-profit companies </strong>looking to establish or rebuild their digital media presence. </li>
 					</ul>
 
 				</div>
