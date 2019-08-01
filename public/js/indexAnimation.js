@@ -156,11 +156,10 @@ function slideOffers(scroll_pos){
 
 }
 
-function Counter(scroll_pos) {
-	if (scroll_pos > 3600 && scroll_pos < 6000) {
-		countUp();
-	}
-}
+
+
+
+
 
 
 
@@ -323,10 +322,10 @@ function readMore(){
 
 
 
+$(document).ready(function(){
 
 
-
-
+var countMagic = new ScrollMagic.Controller();
 
 //functions for stats- GSAP
 function countUpProj(){
@@ -373,6 +372,16 @@ function countUp() {
 }
 
 
+
+var countDownScene = new ScrollMagic.Scene({
+	triggerElement: '#numbers',
+	triggerHook: .8,
+	reverse:false
+   })
+   .setTween(countUp)
+   .addTo(countMagic);
+
+});
 
 
 

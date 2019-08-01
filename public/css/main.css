@@ -1426,6 +1426,7 @@ footer .content{
     /*height: 2000px;*/
     /*height: 2500px;*/
   }
+  
  .mainHire{
    max-height: none;
  }
@@ -1731,7 +1732,7 @@ footer .content{
   grid-column: 1 / -1;
   justify-items: center;
   display: grid;
-  grid-temlpate-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   width: auto;
   text-align: center;
@@ -1820,7 +1821,7 @@ footer .content{
      grid-column: 2 / 8;
      justify-items: center;
      display: grid;
-     grid-temlpate-columns: 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto;
      width: auto;
    }
