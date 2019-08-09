@@ -215,6 +215,7 @@
         </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
+			<img class="timelineSVG" src="images/project_timeline.svg" alt="project timeline">
         </div>
      </div>
 
@@ -242,6 +243,7 @@
     </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
+            <img class="timelineSVG" src="images/project_timeline.svg" alt="project timeline">
         </div>
      </div>
 
@@ -268,6 +270,7 @@
      </div>
         <div class="scaleTimeline">
             <p class="smallTitle">Timeline:</p>
+			<img class="timelineSVG" src="images/project_timeline.svg" alt="project timeline">
         </div>
      </div>
 

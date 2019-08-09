@@ -1284,7 +1284,22 @@ footer .content{
 
 .hireImage{
   /*something in JS is overriding this- !important was added because I couldn't find it*/
- visibility: visible !important;
+  transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transform: translateY(-300%);
+  -webkit-transform: translateY(-150%);
+  -o-transform: translateX(-150%);
+  -moz-transform:translateX(-150%);
+  -ms-transform:translateX(-150%);
+}
+
+.hireImage.fade-in {
+transform: translateX(0%); 
+-o-transform: translateX(0%);
+-moz-transform:translateX(0%);
+-ms-transform:translateX(0%);
 }
 
 .visibleContent, .hiddenContent{
@@ -1707,7 +1722,7 @@ footer .content{
   grid-column: 1 / -1;
   justify-items: center;
   display: grid;
-  grid-temlpate-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   width: auto;
   text-align: center;
@@ -3350,7 +3365,7 @@ section:nth-child(6n+7) .projectInfo a{
 }
 
 #workingAtReactr .content{
- max-width: 1366px;
+ max-width: 500px;
  margin: auto;
  padding-left: 80px;
  padding-right: 80px;
@@ -3360,13 +3375,14 @@ section:nth-child(6n+7) .projectInfo a{
 
 #workingAtReactr .subTitle{
  color: #eb8e30;
- margin-bottom: 40px;
- margin-top: 30px;
+ margin-bottom: 20px;
+ margin-top: 3vw;
  text-align: center;
 }
 
 #workingAtReactr .copy{
- margin-bottom: 30px;
+ margin-bottom: 15px;
+ font-size: 110%;
 }
 
 #workingAtReactr .copy span{
@@ -3384,15 +3400,14 @@ section:nth-child(6n+7) .projectInfo a{
 }
 
 #reactrVideo {
-  width: 50vw;
+  width: 57vw;
 margin: 3vw auto;
-height: 25vw;
-  
+height: 34vw;
 }
 
 @media screen and (min-width: 700px) {
   #workingAtReactr .content {
-    width: 50%;
+    width: 60%;
     padding: 0px;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -3414,9 +3429,9 @@ height: 25vw;
 
 #reactrVideo {
   height: 25vw;
-margin: 15vh auto;
-width: 45vw;
-display: block;
+  margin: 15vh auto;
+  width: 45vw;
+  display: block;
 }
 
 #workingAtReactr .content {
@@ -4407,9 +4422,7 @@ i{
 
 }
 
-
-
-@media screen and (min-width: 1220px){
+@media screen and (min-width: 1220px) {
 
  #jobDescMain #applyHere .subTitle{
    grid-column: 4 / 12;
@@ -4428,6 +4441,80 @@ i{
 
 /*-------------PARTNER PAGE-------------------*/
 
+
+@media screen and (max-width: 600px) {
+
+
+  .scaleSection {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .scaleRowDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .scaleIncludes .copy {
+    text-align: left;
+  }
+  
+ .scaleProjects .copy {
+   text-align: left;
+
+ }
+
+  #scaleType {
+    color: #9fca4f;
+    text-align: center;
+    font-size: 3vh;
+    padding: 1vh;
+  }
+
+  #partner{
+    max-width: 100%;
+   background: -webkit-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
+   background: -o-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
+   background: linear-gradient(to bottom right, #b2da69 30%, #a5cd5c 30%);
+   }
+   
+   #partner .content{
+   padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 25px;
+    max-width: 1366px;
+    margin: auto;
+   }
+   
+   #partner .title{
+    color: #fff;
+    margin-bottom: 65px;
+   }
+   
+   #partner .subTitle{
+    color: #fff;
+    margin-bottom: 30px;
+   }
+   
+   #partner ul {
+    padding: 0 25px;
+   }
+   
+   #partner ul li{
+    color: #fff;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0;
+   }
+  }
+
+@media screen and (min-width: 600px) {
+
 #partner{
  max-width: 100%;
 background: -webkit-linear-gradient(top left, #b2da69 30%, #a5cd5c 30%);
@@ -4437,8 +4524,8 @@ background: linear-gradient(to bottom right, #b2da69 30%, #a5cd5c 30%);
 
 #partner .content{
 padding-top: 100px;
- padding-left: 60px;
- padding-right: 60px;
+ padding-left: 80px;
+ padding-right: 80px;
  padding-bottom: 25px;
  max-width: 1366px;
  margin: auto;
@@ -4454,7 +4541,7 @@ padding-top: 100px;
  margin-bottom: 30px;
 }
 
-#partner ul{
+#partner ul {
  padding: 0 25px;
 }
 
@@ -4466,9 +4553,10 @@ padding-top: 100px;
  padding: 10px 0;
 }
 
-#scaleSection {
+.scaleSection {
   margin-top: 10vh;
   padding: 3vw;
+  margin-bottom: 5%;
 }
 
 #serviceScales {
@@ -4487,6 +4575,7 @@ padding-top: 100px;
   flex-direction: column;
   width: 100vw;
   margin: 5vh auto;
+  margin-bottom: 5%;
 }
 
 #scaleType {
@@ -4532,6 +4621,9 @@ width: 27%;
 }
 
 
+
+}
+
 @media screen and (min-width: 720px){
 
  #partner{
@@ -4554,7 +4646,7 @@ width: 27%;
  }
 
  #partnerMain{
-   margin-top: 60px;
+   margin-top: 35%;
    width: 420px;
  }
 
@@ -4571,7 +4663,7 @@ width: 27%;
      display: grid;
      grid-template-columns: 47px repeat(12, 1fr) 47px;
      grid-column-gap: 16px;
-     padding: 75px  35px;
+     padding: 10px  35px;
    }
 
    #partnerMain{
@@ -4675,7 +4767,7 @@ width: 27%;
  #contactForm{
    max-width: 614px;
    width: 100%;
-   height: 870px;
+   height: 820px;
    background-color: #fff;
    display: block;
  }
@@ -4726,7 +4818,6 @@ width: 27%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
   }
 
   #googleMap{
@@ -4747,7 +4838,7 @@ width: 27%;
 
  #contactInfo{
    margin-top: 170px;
-   margin-bottom: -20px;
+   margin-bottom: 20px;
    margin-left: 0px;
  }
 
