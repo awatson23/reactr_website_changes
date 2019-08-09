@@ -322,12 +322,11 @@ function readMore(){
 
 
 
-$(document).ready(function(){
 
 
 
+//functions and trigger for counting stat numbers - GSAP and scrollMagic
 
-//functions for stats- GSAP
 function countUpProj(){
 
 	var cont = { val:0 },
@@ -344,6 +343,7 @@ function countUpSponsor(){
 
 	TweenLite.to(cont, 2, { val:newVal, roundProps:"val", onUpdate:function(){sponsNum.innerHTML=Math.floor(cont.val) + "K"}});
 }
+
 
 function countUpJobs(){
 
@@ -363,7 +363,6 @@ function countUpAlumni(){
 }
 
 
-
 function countUp() {
 	countUpProj();
 	countUpSponsor();
@@ -371,9 +370,26 @@ function countUp() {
 	countUpAlumni();
 }
 
+var controller = new ScrollMagic.Controller();
+
+var countUpTrigger = new ScrollMagic.Scene({
+	triggerElement: '#numbers',
+	triggerHook: .3,
+	reverse:false
+   })
+   .setTween(countUp)
+   .addTo(controller);
 
 
+  /*slide in trigger for hireImage*/
 
+   var hireImageSlideScene = new ScrollMagic.Scene({
+    triggerElement: '.hireImage',
+    triggerHook: .6,
+    reverse:false
+  })
+    .setClassToggle('.hireImage', 'fade-in')
+    .addTo(controller);
 
 
 
@@ -619,4 +635,3 @@ lessButton.addEventListener('click', readMore);
 
 dots.forEach(dot => dot.addEventListener('click', showSlides));
 
-});
